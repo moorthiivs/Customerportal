@@ -1,0 +1,742 @@
+2023-05-21T06:32:39.275Z info: app is running
+2023-05-24T05:54:12.584Z info: app is running
+2023-05-24T06:39:28.984Z info: app is running
+2023-05-24T06:39:54.094Z info: app is running
+2023-05-24T06:41:32.712Z info: app is running
+2023-05-24T06:42:05.588Z info: app is running
+2023-05-24T06:43:49.107Z info: app is running
+2023-05-24T06:43:59.806Z info: app is running
+2023-05-24T06:50:14.806Z info: app is running
+2023-05-24T06:51:45.354Z info: app is running
+2023-05-24T06:57:41.478Z error: ::1 undefined undefined ENOENT E:\Projects\CertifyMaster\certifymaster_backend\public\index.html - ENOENT: no such file or directory, stat 'E:\Projects\CertifyMaster\certifymaster_backend\public\index.html'
+2023-05-24T06:59:14.648Z info: app is running
+2023-05-24T06:59:18.845Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2023-05-24T07:10:16.117Z info: app is running
+2023-05-24T07:42:41.019Z error: ::1 undefined undefined 401 Authorization - Error while Decoding Token!!
+2023-05-24T07:43:19.711Z info: app is running
+2023-05-24T07:44:08.169Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!
+2023-05-24T07:45:57.724Z info: app is running
+2023-05-24T07:46:27.988Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_labId_fkey"
+2023-05-24T07:47:09.270Z info: app is running
+2023-05-27T17:33:35.132Z info: app is running
+2023-05-27T17:34:21.293Z info: app is running
+2023-05-27T17:34:33.547Z info: app is running
+2023-05-27T17:36:21.787Z info: app is running
+2023-05-27T17:37:15.789Z info: app is running
+2023-05-27T17:49:20.091Z info: app is running
+2023-05-27T17:58:14.364Z error: ::1 undefined undefined 400 /api/lab/add - Invalid Request Params!!
+2023-05-27T17:59:02.577Z info: app is running
+2023-05-27T17:59:17.021Z info: app is running
+2023-05-27T17:59:29.221Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-05-27T18:01:38.338Z error: ::1 undefined undefined 500 /api/company/new - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Companies" violates foreign key constraint "Companies_labId_fkey"
+2023-05-27T18:08:51.624Z info: app is running
+2023-05-27T18:09:35.696Z error: ::1 undefined undefined 500 /api/company/new - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Companies" violates foreign key constraint "Companies_labId_fkey"
+2023-05-27T18:15:16.532Z error: ::1 undefined undefined 500 /api/company/new - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Companies" violates foreign key constraint "Companies_labId_fkey"
+2023-05-27T18:21:09.886Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-05-27T18:24:00.334Z info: app is running
+2023-05-27T18:24:19.063Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-05-27T18:26:14.358Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-05-27T18:28:27.238Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!
+2023-05-27T18:29:29.018Z info: app is running
+2023-05-27T18:30:11.164Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
+2023-05-27T18:31:06.384Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
+2023-05-27T18:32:49.664Z info: app is running
+2023-05-27T18:33:45.560Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
+2023-05-27T18:34:53.210Z info: app is running
+2023-05-27T18:35:24.601Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
+2023-05-27T18:36:59.163Z error: ::1 undefined undefined 400 /api/company/new - Invalid Request Params!!
+2023-05-27T18:37:33.346Z info: app is running
+2023-05-27T18:38:12.414Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-05-27T18:39:25.568Z info: ::1 undefined undefined 200 /api/users/adduser - Log In!!
+2023-05-27T18:40:04.043Z info: app is running
+2023-06-01T14:28:10.604Z info: app is running
+2023-06-01T14:37:38.355Z info: app is running
+2023-06-02T03:55:13.760Z info: app is running
+2023-06-02T04:01:12.256Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-06-02T04:02:23.585Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-06-02T04:04:41.946Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-06-02T04:05:28.545Z info: ::1 1 Jo1PC2-DU4FUvaZ5jnn2WLe7VzOtta_rfa-R_Uqwnbg 200 /api/users/login - Log In!!
+2023-06-02T04:11:33.222Z info: app is running
+2023-06-02T04:11:56.915Z info: app is running
+2023-06-02T04:12:17.095Z info: app is running
+2023-06-02T04:12:21.618Z info: app is running
+2023-06-02T04:12:35.488Z info: app is running
+2023-06-02T07:04:06.930Z info: app is running
+2023-06-02T07:05:32.233Z info: app is running
+2023-06-02T07:17:11.620Z error: undefined undefined undefined ECONNABORTED undefined - request aborted
+2023-06-02T07:18:31.524Z info: app is running
+2023-06-02T07:20:59.539Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!
+2023-06-02T07:21:26.811Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!
+2023-06-02T07:21:41.849Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!
+2023-06-02T07:22:16.186Z info: app is running
+2023-06-02T07:22:48.759Z info: app is running
+2023-06-02T07:23:00.917Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!
+2023-06-02T07:25:56.366Z info: app is running
+2023-06-02T07:25:59.806Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!
+2023-06-02T07:27:30.227Z info: app is running
+2023-06-02T07:27:46.515Z info: app is running
+2023-06-02T07:27:56.354Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!
+2023-06-02T07:28:05.200Z info: app is running
+2023-06-02T07:28:06.661Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!SequelizeDatabaseError: column "companyId" does not exist
+2023-06-02T07:31:31.146Z info: app is running
+2023-06-02T08:42:11.269Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!SequelizeDatabaseError: column "companyId" does not exist
+2023-06-02T08:45:13.833Z info: app is running
+2023-06-02T08:45:18.924Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!SequelizeDatabaseError: column "companyId" does not exist
+2023-06-02T08:46:01.341Z info: app is running
+2023-06-02T08:46:06.047Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T08:49:50.765Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-06-02T08:51:12.725Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-06-02T08:51:57.296Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-06-02T08:53:35.788Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T08:55:46.176Z info: app is running
+2023-06-02T08:55:50.694Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T08:57:06.048Z info: app is running
+2023-06-02T08:57:09.798Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T08:58:18.849Z info: app is running
+2023-06-02T08:58:20.072Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T08:59:05.298Z info: app is running
+2023-06-02T09:01:01.112Z info: app is running
+2023-06-02T09:03:27.215Z info: app is running
+2023-06-02T09:03:30.148Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T09:04:03.499Z info: app is running
+2023-06-02T09:04:05.101Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T09:04:23.505Z info: app is running
+2023-06-02T09:04:24.559Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T09:07:41.186Z info: app is running
+2023-06-02T09:08:34.373Z info: app is running
+2023-06-02T09:08:36.093Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-06-02T09:10:41.078Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-06-02T09:11:04.592Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-06-02T09:12:16.296Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T09:13:26.375Z info: app is running
+2023-06-02T09:13:38.705Z info: app is running
+2023-06-02T09:14:14.848Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "labId" of relation "Certificates" violates not-null constraint
+2023-06-02T09:15:27.814Z info: app is running
+2023-06-02T09:15:30.957Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:17:10.849Z info: app is running
+2023-06-02T09:18:46.082Z info: app is running
+2023-06-02T09:18:51.963Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:20:26.327Z info: app is running
+2023-06-02T09:20:31.623Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:20:42.611Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:22:51.971Z info: app is running
+2023-06-02T09:22:54.993Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:24:04.180Z info: app is running
+2023-06-02T09:24:11.203Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:24:19.049Z info: app is running
+2023-06-02T09:24:33.616Z info: app is running
+2023-06-02T09:24:36.717Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:24:53.211Z info: app is running
+2023-06-02T09:26:53.136Z info: app is running
+2023-06-02T09:26:55.637Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeForeignKeyConstraintError: insert or update on table "Certificates" violates foreign key constraint "Certificates_companyId_fkey"
+2023-06-02T09:30:01.549Z info: app is running
+2023-06-02T09:30:03.303Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-06-02T09:31:08.231Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-06-02T09:31:57.356Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-02T09:34:46.811Z info: app is running
+2023-06-02T09:35:00.432Z info: app is running
+2023-06-05T05:18:58.312Z info: app is running
+2023-06-05T05:19:07.547Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-06-05T06:39:30.888Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-06-05T06:45:27.881Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-06-05T06:47:57.874Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-06-05T07:11:49.463Z info: ::1 1 o2lXvN_5vAMyL2iF2PYx4aVB19a1W8I3zjYsczfziHM 200 /api/users/login - Log In!!
+2023-06-05T07:54:04.783Z info: app is running
+2023-06-05T07:57:39.894Z info: app is running
+2023-06-05T08:01:14.364Z info: ::1 1 Pd59A_MfJlXFrsOTiw0vEoOGUZhHda0KPf_Gjxu-xLo 200 /api/users/login - Log In!!
+2023-06-05T08:03:11.593Z info: ::1 1 -RORzrNBF0CV96JOsbpmjYTiQyq6LMGnylU6ioWc9zU 200 /api/users/login - Log In!!
+2023-06-05T08:03:58.750Z info: app is running
+2023-06-05T08:05:53.725Z info: app is running
+2023-06-05T08:11:29.978Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!
+2023-06-05T08:12:06.313Z info: app is running
+2023-06-05T08:12:11.776Z info: app is running
+2023-06-05T08:13:09.060Z info: app is running
+2023-06-05T08:13:17.281Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!TypeError: Certificate.find is not a function
+2023-06-05T08:13:40.712Z info: app is running
+2023-06-05T08:13:46.467Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!SequelizeDatabaseError: column Certificate.labId does not exist
+2023-06-05T08:14:04.839Z info: app is running
+2023-06-05T08:15:11.461Z info: app is running
+2023-06-05T09:03:58.092Z info: ::1 1 HQxU8QGyMqekFdWDikFMChRK8isJJFocSJbP2cGAzY4 200 /api/users/login - Log In!!
+2023-06-05T09:06:24.679Z info: app is running
+2023-06-05T09:08:37.517Z info: app is running
+2023-06-05T09:08:54.562Z info: app is running
+2023-06-05T09:09:23.079Z info: app is running
+2023-06-05T09:14:57.478Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:14:59.810Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:15:41.944Z info: app is running
+2023-06-05T09:15:49.260Z info: app is running
+2023-06-05T09:16:01.043Z info: app is running
+2023-06-05T09:16:09.948Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:16:09.967Z error: ::1 undefined undefined ENOENT E:\iviewsense1\CertifyMaster\certifymaster_backend\dcertificates\1_1_1_Vernier Caliber.pdf - ENOENT: no such file or directory, stat 'E:\iviewsense1\CertifyMaster\certifymaster_backend\dcertificates\1_1_1_Vernier Caliber.pdf'
+2023-06-05T09:16:44.294Z info: app is running
+2023-06-05T09:16:47.581Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:17:05.813Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:17:07.999Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:17:48.196Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:17:49.935Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:23:10.833Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:23:13.800Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:23:29.198Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:23:39.687Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:24:32.087Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:24:45.385Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:24:46.584Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:43:38.792Z info: app is running
+2023-06-05T09:43:49.324Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:43:49.341Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:43:58.776Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:45:27.811Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:45:28.977Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:46:50.182Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:46:51.446Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:47:55.454Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:50:42.063Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:50:43.718Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:51:47.762Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:51:49.343Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:57:33.723Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:57:35.022Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T09:59:56.842Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T09:59:58.350Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T10:03:04.288Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T10:03:10.375Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T10:03:20.855Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T10:03:29.359Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T10:04:18.128Z info: ::1 1 wgN9VMdbji30oEd_6-CV6GkS-sADqdkpkd3qY55lYdM 200 /api/users/login - Log In!!
+2023-06-05T10:04:23.041Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T10:04:41.203Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T10:04:44.908Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T10:12:49.968Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T10:13:11.109Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T10:15:25.069Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-05T10:15:30.060Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-05T10:18:28.175Z info: app is running
+2023-06-06T08:48:02.108Z info: app is running
+2023-06-06T09:30:38.215Z info: app is running
+2023-06-06T09:33:30.368Z info: ::1 1 l6v653rmcgv0KvmgvR0Np2jTHtJt30__hPcerM-bAnM 200 /api/users/login - Log In!!
+2023-06-06T09:34:03.073Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-06-06T09:34:26.335Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-06-06T09:34:26.338Z error: ::1 undefined undefined ENOENT E:\iviewsense1\CertifyMaster\certifymaster_backend\certificates\1_1_1_Vernier Caliber.pdf - ENOENT: no such file or directory, stat 'E:\iviewsense1\CertifyMaster\certifymaster_backend\certificates\1_1_1_Vernier Caliber.pdf'
+2023-06-06T09:38:18.745Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_1_Vernier Caliber.pdf
+2023-07-01T06:42:52.962Z info: app is running
+2023-07-01T08:28:14.323Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-07-01T08:29:54.794Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-07-01T08:36:28.995Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-01T08:44:17.304Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:24.924Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:27.511Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:27.547Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:27.949Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:28.014Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:28.381Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:29.263Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:29.287Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:51.138Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:44:57.011Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:45:13.012Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:45:13.978Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:45:14.028Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:45:14.365Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\601 (1).pdf'
+2023-07-01T08:45:59.636Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\INvoice SFT-05-01111.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\INvoice SFT-05-01111.pdf'
+2023-07-01T08:46:03.517Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\INvoice SFT-05-01111.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\INvoice SFT-05-01111.pdf'
+2023-07-01T08:46:52.596Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\INvoice SFT-05-01111.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\INvoice SFT-05-01111.pdf'
+2023-07-01T09:32:36.176Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T09:35:22.921Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T09:35:37.883Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T09:35:52.442Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T09:37:23.758Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf'
+2023-07-01T09:37:36.776Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf'
+2023-07-01T09:38:13.198Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T09:40:04.480Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\22mathematical reasoning-jeemain.guru.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\22mathematical reasoning-jeemain.guru.pdf'
+2023-07-01T09:40:08.854Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\22mathematical reasoning-jeemain.guru.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\22mathematical reasoning-jeemain.guru.pdf'
+2023-07-01T09:40:33.812Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf'
+2023-07-01T09:40:39.270Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf'
+2023-07-01T09:40:41.884Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf'
+2023-07-01T09:40:44.014Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2relation-jeemain.guru.pdf'
+2023-07-01T09:41:06.996Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T09:42:10.294Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T09:43:29.958Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T09:43:38.841Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:07:11.476Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-01T10:08:06.805Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-01T10:22:36.039Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-01T10:37:13.244Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:37:16.498Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:37:17.264Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:37:19.082Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:37:32.352Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:33.714Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:34.165Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:34.455Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:34.762Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:50.315Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:52.818Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:54.213Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:37:55.415Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:38:06.384Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:38:21.443Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf'
+2023-07-01T10:38:32.555Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf'
+2023-07-01T10:38:40.030Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:38:41.563Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:38:41.905Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:38:42.155Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:41:15.731Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf'
+2023-07-01T10:53:50.046Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-07-01T10:55:07.326Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-07-01T10:55:46.180Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-07-01T10:56:39.416Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-07-01T10:57:00.599Z info: ::1 2 W0aMVuBAAJr4LXxzXpBLYOVIo8p4qGNcaS-UZaeX59E 200 /api/users/login - Log In!!
+2023-07-01T10:57:03.803Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-07-01T10:57:48.404Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2023-ACB-I00001.xlsx - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2023-ACB-I00001.xlsx'
+2023-07-01T10:57:51.020Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2023-ACB-I00001.xlsx - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2023-ACB-I00001.xlsx'
+2023-07-01T10:57:51.739Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2023-ACB-I00001.xlsx - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\2023-ACB-I00001.xlsx'
+2023-07-01T10:58:10.942Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:58:11.506Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:58:14.511Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 0-200 mm.pdf'
+2023-07-01T10:58:22.190Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 200 mm.pdf'
+2023-07-01T10:58:29.059Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\item-detail-report 600 mm (1).pdf'
+2023-07-01T10:59:40.332Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf'
+2023-07-01T11:01:23.961Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-07-01T11:01:26.560Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-07-03T07:16:37.478Z info: app is running
+2023-07-04T09:36:56.499Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-07-04T09:47:10.122Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-04T09:48:10.094Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-04T09:48:10.097Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-04T09:55:54.782Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-04T10:01:44.386Z error: ::1 undefined undefined ENOENT C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf - ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (2)\Product\certifymaster_backend\certificates\inspection-detail-report 300 mm (1).pdf'
+2023-07-04T10:08:19.957Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-07-04T10:08:47.070Z info: ::1 3 ytbUKHWLmhW0mrsdkt6DHkm9ie_zo_TwaotmuE1RQbs 200 /api/users/login - Log In!!
+2023-07-04T10:08:56.661Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-07-25T14:04:58.167Z info: app is running
+2023-07-25T14:19:26.754Z info: app is running
+2023-07-25T14:24:38.838Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-07-25T16:31:32.070Z error: ::1 undefined undefined 401 /api/lab/new - Lab Already Exists!!
+2023-07-26T14:03:32.138Z info: app is running
+2023-07-26T16:32:07.531Z error: ::1 undefined undefined 401 /api/lab/new - Lab Already Exists!!
+2023-07-26T16:34:39.751Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-29T06:05:53.890Z info: app is running
+2023-07-29T06:28:42.514Z error: ::1 undefined undefined ENOENT C:\TestcalVersion\certifymaster_backend\certificates\sample.pdf - ENOENT: no such file or directory, open 'C:\TestcalVersion\certifymaster_backend\certificates\sample.pdf'
+2023-07-29T06:30:43.252Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-07-29T06:31:53.141Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-07-29T06:40:45.083Z info: app is running
+2023-07-29T06:43:10.243Z error: ::1 undefined undefined 500 /api/company/new - Internal Server Error!!SequelizeUniqueConstraintError: Validation error
+2023-07-29T06:46:56.495Z info: app is running
+2023-07-29T06:48:57.280Z info: ::1 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-07-29T06:50:13.315Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-07-29T06:53:53.914Z info: ::1 200 /api/certificate/upload - Upload Certificate
+2023-08-09T14:19:19.250Z info: app is running
+2023-08-09T14:22:36.434Z info: ::ffff:136.185.12.73 200 /api/certificate/upload - Upload Certificate
+2023-08-09T14:38:41.077Z info: app is running
+2023-08-09T14:40:42.014Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-09T15:01:30.931Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-09T15:08:47.412Z info: ::ffff:136.185.12.73 200 /api/certificate/upload - Upload Certificate
+2023-08-09T15:10:16.345Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-09T15:17:23.623Z error: ::ffff:136.185.12.73 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-09T15:17:34.021Z info: ::ffff:136.185.12.73 11 btJ8-lQUYGWDMYhI2RlUXcW0tOuyJDHCSxYCVFrCRIg 200 /api/users/login - Log In!!
+2023-08-09T15:17:37.118Z info: ::ffff:136.185.12.73 200 /api/certificate/list - Get Certificates List
+2023-08-09T15:17:40.172Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/certificate/download - Get Document 1_48_70_Vernier Caliper.pdf
+2023-08-09T15:31:07.846Z info: app is running
+2023-08-09T16:15:48.897Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-09T16:16:30.938Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-09T16:23:17.084Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-09T16:24:18.020Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-09T16:51:45.691Z info: ::ffff:182.65.149.43 200 /api/certificate/upload - Upload Certificate
+2023-08-09T16:53:49.539Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-09T16:56:25.164Z info: ::ffff:182.65.149.43 13 odBsAzXISmxFhzvgdRt9qeSihpHvVO8aJ0PTVreB32Y 200 /api/users/login - Log In!!
+2023-08-09T16:56:31.319Z info: ::ffff:182.65.149.43 200 /api/certificate/list - Get Certificates List
+2023-08-09T17:19:44.968Z info: ::ffff:101.0.63.243 200 /api/certificate/upload - Upload Certificate
+2023-08-09T17:20:56.616Z info: ::ffff:101.0.63.243 200 /api/certificate/upload - Upload Certificate
+2023-08-09T17:34:14.922Z info: ::ffff:101.0.63.243 200 /api/certificate/upload - Upload Certificate
+2023-08-09T17:48:19.994Z info: ::ffff:101.0.63.243 12 6J10ViIACLT0bU6FeuQ17X9teX4qt8JPgfaqO2ZpYwc 200 /api/users/login - Log In!!
+2023-08-09T17:48:24.200Z info: ::ffff:101.0.63.243 200 /api/certificate/list - Get Certificates List
+2023-08-09T17:49:01.255Z info: ::ffff:101.0.63.243 undefined undefined 200 /api/certificate/download - Get Document 17_50_74_Vernier Calipher.pdf
+2023-08-09T17:49:08.270Z info: ::ffff:101.0.63.243 undefined undefined 200 /api/certificate/download - Get Document 17_50_74_Vernier Calipher.pdf
+2023-08-10T00:51:50.630Z info: app is running
+2023-08-10T01:45:40.626Z info: ::ffff:101.0.63.243 200 /api/certificate/upload - Upload Certificate
+2023-08-10T01:50:57.269Z info: ::ffff:182.65.149.43 200 /api/certificate/upload - Upload Certificate
+2023-08-10T01:51:31.544Z error: ::ffff:182.65.149.43 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T01:53:43.048Z info: ::ffff:182.65.149.43 13 EyIH6pFkGtcu_OIYMEnv0CuLJBnrWqDpUad6pDkU4LY 200 /api/users/login - Log In!!
+2023-08-10T01:53:49.190Z info: ::ffff:182.65.149.43 200 /api/certificate/list - Get Certificates List
+2023-08-10T01:53:53.003Z info: ::ffff:182.65.149.43 undefined undefined 200 /api/certificate/download - Get Document 15_52_76_Wrench.pdf
+2023-08-10T01:55:45.823Z info: ::ffff:101.0.63.243 12 ol1dWNREfTdW8wRjzqc7Z4nf51fGXcbow49XPBY3QxI 200 /api/users/login - Log In!!
+2023-08-10T01:55:47.861Z info: ::ffff:101.0.63.243 200 /api/certificate/list - Get Certificates List
+2023-08-10T01:56:13.488Z info: ::ffff:101.0.63.243 undefined undefined 200 /api/certificate/download - Get Document 17_53_77_Vernier Calipher.pdf
+2023-08-10T01:56:34.874Z info: ::ffff:101.0.63.243 200 /api/certificate/list - Get Certificates List
+2023-08-10T01:56:43.806Z info: ::ffff:101.0.63.243 undefined undefined 200 /api/certificate/download - Get Document 17_53_77_Vernier Calipher.pdf
+2023-08-10T02:06:56.763Z info: ::ffff:101.0.63.243 12 gcOes44cxC1YB6xpfQif_mib1HMetbRQHhKC1M2yun4 200 /api/users/login - Log In!!
+2023-08-10T02:11:37.511Z info: ::ffff:101.0.63.243 200 /api/certificate/list - Get Certificates List
+2023-08-10T02:19:20.196Z info: ::ffff:101.0.63.243 200 /api/certificate/list - Get Certificates List
+2023-08-10T02:20:04.779Z info: ::ffff:101.0.63.243 undefined undefined 200 /api/certificate/download - Get Document 17_53_77_Vernier Calipher.pdf
+2023-08-10T02:20:10.887Z info: ::ffff:101.0.63.243 undefined undefined 200 /api/certificate/download - Get Document 17_53_77_Vernier Calipher.pdf
+2023-08-10T03:37:45.665Z info: ::ffff:182.65.149.43 200 /api/certificate/upload - Upload Certificate
+2023-08-10T03:38:10.014Z error: ::ffff:182.65.149.43 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T03:38:59.424Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T03:39:07.180Z info: ::ffff:182.65.149.43 14 eHLT6vzSfnSaxcWhJGk5BO8WxerdEBd0OFlN6sR4xF0 200 /api/users/login - Log In!!
+2023-08-10T03:39:10.002Z info: ::ffff:182.65.149.43 200 /api/certificate/list - Get Certificates List
+2023-08-10T03:39:16.261Z info: ::ffff:182.65.149.43 undefined undefined 200 /api/certificate/download - Get Document 15_52_76_Wrench.pdf
+2023-08-10T04:24:58.062Z error: ::ffff:103.224.35.117 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T04:25:01.462Z error: ::ffff:103.224.35.117 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T04:25:02.850Z error: ::ffff:103.224.35.117 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T04:45:40.121Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-10T04:46:43.586Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-10T05:04:33.619Z info: ::ffff:182.65.149.43 200 /api/certificate/upload - Upload Certificate
+2023-08-10T05:08:06.604Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T05:08:21.320Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-10T05:08:56.118Z info: ::ffff:182.65.149.43 15 ab4x-b4yECR_xNIoPFcGBzShJW1g-M1uKHgTWFH3314 200 /api/users/login - Log In!!
+2023-08-10T05:09:22.879Z info: ::ffff:182.65.149.43 200 /api/certificate/list - Get Certificates List
+2023-08-10T05:09:30.266Z info: ::ffff:182.65.149.43 undefined undefined 200 /api/certificate/download - Get Document 15_54_78_centrifuge.pdf
+2023-08-10T05:17:20.296Z error: ::ffff:49.43.240.169 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-10T05:20:54.343Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:30:18.187Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:30:40.426Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-10T05:30:41.131Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:31:40.443Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:31:41.629Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:33:17.897Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:33:54.057Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:33:54.894Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:33:59.533Z error: ::ffff:103.43.202.130 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:36:20.928Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-10T05:37:28.252Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:38:13.100Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T05:38:22.492Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:38:23.913Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:38:24.791Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:38:41.611Z info: ::ffff:103.43.202.130 16 -qGG6QiEb2uk0x1SIND2KoCN4nDrCz1PCY_gA8Q6Xdo 200 /api/users/login - Log In!!
+2023-08-10T05:38:44.060Z info: ::ffff:103.43.202.130 200 /api/certificate/list - Get Certificates List
+2023-08-10T05:39:28.582Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:40:23.349Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:45:13.833Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T05:47:27.365Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T05:48:55.356Z info: ::ffff:49.43.240.169 17 npAR-ydDH6xJ4FjQX5L0wi95NjEedHWNjJI5Xcqf0Bc 200 /api/users/login - Log In!!
+2023-08-10T05:49:01.480Z info: ::ffff:49.43.240.169 200 /api/certificate/list - Get Certificates List
+2023-08-10T05:49:45.816Z info: ::ffff:49.43.240.169 17 w_vo9SmR8_ycLYPn_DxLyw_4cpTqSEbmGNjUutu_Rpk 200 /api/users/login - Log In!!
+2023-08-10T05:49:49.072Z info: ::ffff:49.43.240.169 200 /api/certificate/list - Get Certificates List
+2023-08-10T05:50:00.353Z info: ::ffff:49.43.240.169 200 /api/certificate/list - Get Certificates List
+2023-08-10T05:50:01.454Z info: ::ffff:49.43.240.169 200 /api/certificate/list - Get Certificates List
+2023-08-10T05:50:14.771Z info: ::ffff:223.231.153.133 200 /api/certificate/upload - Upload Certificate
+2023-08-10T05:57:02.483Z error: ::ffff:223.231.153.133 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-10T06:05:00.050Z error: ::ffff:223.231.153.133 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-10T06:05:06.991Z error: ::ffff:223.231.153.133 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-10T06:18:11.845Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T06:59:51.414Z info: ::ffff:223.231.153.133 200 /api/certificate/upload - Upload Certificate
+2023-08-10T07:00:10.553Z info: ::ffff:223.231.153.133 200 /api/certificate/upload - Upload Certificate
+2023-08-10T07:00:15.278Z info: ::ffff:223.231.153.133 200 /api/certificate/upload - Upload Certificate
+2023-08-10T07:00:15.857Z info: ::ffff:223.231.153.133 200 /api/certificate/upload - Upload Certificate
+2023-08-10T07:00:24.477Z info: ::ffff:223.231.153.133 200 /api/certificate/upload - Upload Certificate
+2023-08-10T07:01:36.678Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T07:10:43.009Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-10T07:20:05.869Z info: ::ffff:103.43.202.130 200 /api/certificate/upload - Upload Certificate
+2023-08-10T07:25:05.422Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T07:25:44.371Z info: ::ffff:103.43.202.130 19 ldTKWk4LS_cQ8cU7XkbLTKuC_yZ8P5vrRqgX_S7Ptb0 200 /api/users/login - Log In!!
+2023-08-10T07:25:51.076Z info: ::ffff:103.43.202.130 200 /api/certificate/list - Get Certificates List
+2023-08-10T07:27:15.295Z info: ::ffff:103.43.202.130 undefined undefined 200 /api/certificate/download - Get Document 8_57_81_Screw gauge.pdf
+2023-08-10T07:29:49.757Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T07:30:04.283Z info: ::ffff:49.43.240.169 17 GqJ7Tp6enZC9YpWo5iJLaDJAknzbdZT-QIiZL1fKSv4 200 /api/users/login - Log In!!
+2023-08-10T07:30:04.459Z info: ::ffff:49.43.240.169 17 GqJ7Tp6enZC9YpWo5iJLaDJAknzbdZT-QIiZL1fKSv4 200 /api/users/login - Log In!!
+2023-08-10T07:30:15.028Z info: ::ffff:49.43.240.169 200 /api/certificate/list - Get Certificates List
+2023-08-10T07:39:22.265Z error: ::ffff:49.43.240.169 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-10T07:41:55.764Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T07:42:53.621Z info: ::ffff:49.43.240.169 20 swziOWYJQ72znlZig5ziIv3yD3kQ5QsscsoVwr4_V04 200 /api/users/login - Log In!!
+2023-08-10T07:42:56.680Z info: ::ffff:49.43.240.169 200 /api/certificate/list - Get Certificates List
+2023-08-10T07:44:28.300Z info: ::ffff:49.43.240.169 200 /api/certificate/upload - Upload Certificate
+2023-08-10T08:02:09.668Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-10T08:14:11.574Z info: ::ffff:49.43.240.169 200 /api/certificate/upload - Upload Certificate
+2023-08-10T08:23:01.327Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-10T08:23:47.182Z info: ::ffff:49.43.240.169 21 63mTT6P3lwAyD1MkUv80WPrzUm6HOvXTyZ82xFBDdEc 200 /api/users/login - Log In!!
+2023-08-10T08:23:50.581Z info: ::ffff:49.43.240.169 200 /api/certificate/list - Get Certificates List
+2023-08-10T08:24:03.459Z info: ::ffff:49.43.240.169 undefined undefined 200 /api/certificate/download - Get Document 9_58_82_Vernier callipers.pdf
+2023-08-11T05:03:28.236Z error: ::ffff:182.65.149.43 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-11T05:03:34.159Z error: ::ffff:182.65.149.43 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-11T05:04:16.969Z info: ::ffff:182.65.149.43 15 890rg-RiPEx5d8reo5Ep-Q-ijIB7Y-HxYnhOmy8sqXM 200 /api/users/login - Log In!!
+2023-08-11T05:04:32.699Z info: ::ffff:182.65.149.43 200 /api/certificate/list - Get Certificates List
+2023-08-11T05:04:35.835Z info: ::ffff:182.65.149.43 undefined undefined 200 /api/certificate/download - Get Document 15_54_78_centrifuge.pdf
+2023-08-11T06:17:04.408Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-11T06:42:36.297Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-11T06:45:52.918Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-11T06:47:11.682Z info: ::ffff:182.65.149.43 200 /api/certificate/upload - Upload Certificate
+2023-08-11T06:48:07.102Z info: ::ffff:182.65.149.43 22 tvlJpp6IQxBCBFE_VXiGmBtkTU3IfndApNyn5gWmRLk 200 /api/users/login - Log In!!
+2023-08-11T06:48:21.151Z info: ::ffff:182.65.149.43 200 /api/certificate/list - Get Certificates List
+2023-08-11T06:48:26.360Z info: ::ffff:182.65.149.43 undefined undefined 200 /api/certificate/download - Get Document 15_59_83_Thermometer.pdf
+2023-08-11T06:49:44.905Z info: ::ffff:106.195.33.39 200 /api/certificate/upload - Upload Certificate
+2023-08-11T06:59:11.122Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-11T06:59:46.346Z error: ::ffff:106.195.33.39 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-08-11T06:59:53.265Z info: ::ffff:106.195.33.39 23 Yg2TDZqUQ42Cy0-KGkGKg1mW-7-DEivXaT-RIi-hqZo 200 /api/users/login - Log In!!
+2023-08-11T06:59:58.749Z info: ::ffff:106.195.33.39 200 /api/certificate/list - Get Certificates List
+2023-08-11T07:00:19.006Z info: ::ffff:106.195.33.39 undefined undefined 200 /api/certificate/download - Get Document 7_60_84_Screw gauge.pdf
+2023-08-11T12:34:33.529Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-11T12:52:18.823Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T12:52:32.206Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T12:52:33.166Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T12:52:53.461Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T12:58:15.650Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-11T12:59:22.101Z info: ::ffff:49.43.243.102 24 T2e0kbyYJdCG-FgAOMu8vmJrwjfG1jEhabmrHCysKNA 200 /api/users/login - Log In!!
+2023-08-11T12:59:24.863Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T12:59:48.848Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:03:33.831Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:03:35.105Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:03:41.757Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:03:42.798Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:03:43.024Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:05:57.342Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-11T13:06:32.801Z info: ::ffff:49.43.243.102 25 sYo1DN3cVoEpGbLxnKy1N_iSrB6DOOwvGU3QyYDhsF0 200 /api/users/login - Log In!!
+2023-08-11T13:06:34.690Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:06:43.339Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:06:44.519Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:06:45.087Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:07:54.288Z info: ::ffff:49.43.243.102 25 WPi8uE8OHzi1pK32pX_dUx-OY4mEr2vwhcUMlEVS19M 200 /api/users/login - Log In!!
+2023-08-11T13:07:58.222Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:15:15.299Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:15:16.232Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:15:16.994Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:17:53.899Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:20:08.234Z info: ::ffff:49.43.243.102 200 /api/certificate/upload - Upload Certificate
+2023-08-11T13:22:57.499Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T13:23:06.090Z info: ::ffff:49.43.243.102 undefined undefined 200 /api/certificate/download - Get Document 9_61_85_Pressure Gauge.pdf
+2023-08-11T13:48:11.188Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-11T13:56:12.765Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-11T14:01:28.980Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:01:55.740Z info: ::ffff:49.43.243.102 200 /api/certificate/upload - Upload Certificate
+2023-08-11T14:02:58.603Z info: ::ffff:49.43.243.102 200 /api/certificate/upload - Upload Certificate
+2023-08-11T14:02:59.927Z info: ::ffff:49.43.243.102 200 /api/certificate/upload - Upload Certificate
+2023-08-11T14:03:00.592Z info: ::ffff:49.43.243.102 200 /api/certificate/upload - Upload Certificate
+2023-08-11T14:05:20.107Z info: ::ffff:49.43.243.102 26 bcEILG5tADNiUcotjps_KnSchiBd1jLe8qXb4rWRZSY 200 /api/users/login - Log In!!
+2023-08-11T14:05:24.081Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T14:05:44.487Z info: ::ffff:49.43.243.102 undefined undefined 200 /api/certificate/download - Get Document 9_62_87_Vernier callipers.pdf
+2023-08-11T14:09:22.947Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T14:21:00.581Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-11T14:29:46.910Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:33:38.980Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-11T14:35:26.862Z info: ::ffff:49.43.243.102 27 dkdvzZoisZ1PY7q1RIRfxBJXtf7PGMK8N1LD-3wMNnw 200 /api/users/login - Log In!!
+2023-08-11T14:35:29.277Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T14:35:36.585Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T14:35:59.478Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:36:40.981Z info: ::ffff:49.43.243.102 27 OM4uC9C6d4GvOZZTo9NMb25GD9JYDQRWCQhFraHvjVk 200 /api/users/login - Log In!!
+2023-08-11T14:36:43.899Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T14:36:54.383Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:36:55.689Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:36:56.279Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:36:56.849Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:36:56.884Z error: ::ffff:49.43.243.102 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T14:38:55.163Z info: ::ffff:49.43.243.102 200 /api/certificate/upload - Upload Certificate
+2023-08-11T14:39:34.380Z info: ::ffff:49.43.243.102 27 UowEaXSCBFHwM6metr1HenLJAXRHY9urh2UgMJZ7f10 200 /api/users/login - Log In!!
+2023-08-11T14:39:38.699Z info: ::ffff:49.43.243.102 200 /api/certificate/list - Get Certificates List
+2023-08-11T14:39:51.421Z info: ::ffff:49.43.243.102 undefined undefined 200 /api/certificate/download - Get Document 9_63_88_Screw guage.pdf
+2023-08-11T16:02:25.232Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-11T16:16:38.340Z error: ::ffff:49.43.243.21 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-11T16:17:07.598Z info: ::ffff:49.43.243.21 200 /api/certificate/upload - Upload Certificate
+2023-08-11T16:22:59.555Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-11T16:23:39.920Z info: ::ffff:49.43.243.21 28 GkwzUroDq5Cu98R7eIwdU_fZel-cAKutnQqusvg4GQU 200 /api/users/login - Log In!!
+2023-08-11T16:23:50.813Z info: ::ffff:49.43.243.21 200 /api/certificate/list - Get Certificates List
+2023-08-11T16:23:59.716Z info: ::ffff:49.43.243.21 undefined undefined 200 /api/certificate/download - Get Document 9_64_89_Spherometer.pdf
+2023-08-12T04:47:31.301Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-08-12T05:08:10.001Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-08-12T05:13:08.270Z info: ::ffff:182.65.149.43 200 /api/certificate/upload - Upload Certificate
+2023-08-12T05:13:47.531Z info: ::ffff:182.65.149.43 29 93H45FrnaQCgJQpmN3Q_MPz9p7i8QM2fJ83--JBxbWc 200 /api/users/login - Log In!!
+2023-08-12T05:13:57.389Z info: ::ffff:182.65.149.43 200 /api/certificate/list - Get Certificates List
+2023-08-12T05:14:09.217Z info: ::ffff:182.65.149.43 undefined undefined 200 /api/certificate/download - Get Document 15_65_90_Heater.pdf
+2023-08-12T05:32:02.354Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-08-12T05:41:11.469Z info: ::ffff:136.185.12.73 undefined undefined 200 /api/lab/new - Adding New Lab!!
+2023-08-12T15:32:26.885Z info: app is running
+2023-08-13T04:49:51.361Z info: app is running
+2023-08-14T01:33:16.474Z info: app is running
+2023-08-14T01:49:55.743Z info: app is running
+2023-08-14T12:20:26.055Z info: app is running
+2023-08-16T15:52:21.565Z error: ::ffff:101.0.62.77 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeDatabaseError: null value in column "companyId" of relation "Certificates" violates not-null constraint
+2023-08-16T15:54:38.363Z info: ::ffff:101.0.62.77 12 SY66Omr84TlTxy8BkR9L1ATqpBoxJBCD1IMSZnP8YWI 200 /api/users/login - Log In!!
+2023-08-16T15:54:39.941Z info: ::ffff:101.0.62.77 200 /api/certificate/list - Get Certificates List
+2023-08-16T15:55:59.564Z info: ::ffff:101.0.62.77 200 /api/certificate/upload - Upload Certificate
+2023-08-16T15:56:14.595Z info: ::ffff:101.0.62.77 12 UfkAIqX6EELD8VLJHhUMd7nXeqYFUw_Bw7zEHYF7tQQ 200 /api/users/login - Log In!!
+2023-08-16T15:56:17.988Z info: ::ffff:101.0.62.77 200 /api/certificate/list - Get Certificates List
+2023-08-16T15:56:20.766Z info: ::ffff:101.0.62.77 undefined undefined 200 /api/certificate/download - Get Document 17_66_91_MultiMeter.pdf
+2023-11-14T13:21:12.878Z info: app is running
+2023-11-14T13:21:28.898Z info: app is running
+2023-11-14T13:21:35.145Z info: app is running
+2023-11-15T03:08:42.133Z info: app is running
+2023-11-15T03:18:21.686Z info: app is running
+2023-11-15T04:11:04.599Z info: app is running
+2023-11-15T04:25:36.004Z info: app is running
+2023-11-15T04:26:14.136Z info: app is running
+2023-11-15T04:35:22.453Z info: app is running
+2023-11-15T05:00:40.249Z info: app is running
+2023-11-15T05:13:05.053Z info: app is running
+2023-11-15T07:26:21.272Z info: app is running
+2023-11-15T07:26:36.040Z info: app is running
+2023-11-15T07:26:44.206Z info: app is running
+2023-11-15T07:30:13.859Z info: app is running
+2023-11-15T07:31:45.644Z info: app is running
+2023-11-15T07:32:14.124Z info: app is running
+2023-11-15T07:32:55.794Z info: app is running
+2023-11-15T07:33:05.309Z info: app is running
+2023-11-15T07:34:38.013Z info: app is running
+2023-11-15T08:05:56.040Z info: app is running
+2023-11-15T08:12:50.205Z info: app is running
+2023-11-15T08:16:40.722Z error: ::1 undefined undefined 401 undefined - Lab Already Exists!!
+2023-11-15T08:22:31.931Z info: app is running
+2023-11-15T08:22:50.208Z info: app is running
+2023-11-15T08:51:37.412Z info: app is running
+2023-11-15T08:51:47.909Z info: app is running
+2023-11-15T15:43:28.339Z info: app is running
+2023-11-15T15:48:27.988Z info: app is running
+2023-11-15T15:48:58.251Z info: app is running
+2023-11-15T16:05:28.016Z info: app is running
+2023-11-15T16:05:31.845Z info: app is running
+2023-11-15T16:08:13.730Z info: app is running
+2023-11-15T16:08:40.109Z info: app is running
+2023-11-15T16:09:02.630Z info: app is running
+2023-11-15T16:09:23.941Z info: app is running
+2023-11-15T16:09:29.975Z info: app is running
+2023-11-15T16:09:45.399Z info: app is running
+2023-11-15T16:09:57.029Z info: app is running
+2023-11-15T16:10:03.421Z info: app is running
+2023-11-15T16:10:17.716Z info: app is running
+2023-11-15T16:10:29.766Z info: app is running
+2023-11-15T16:19:13.419Z error: ::1 undefined undefined 500 /api/company/new - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Companies" violates foreign key constraint "Companies_labId_fkey"
+2023-11-15T16:24:57.088Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-11-15T17:25:06.392Z info: app is running
+2023-11-15T17:40:04.120Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-11-15T17:57:20.475Z info: app is running
+2023-11-15T17:57:29.507Z info: ::1 1 6mp5xrQm-esV0KhD-bmRtlnM7eZWNuqX7xtsV-fi5Zk 200 /api/users/login - Log In!!
+2023-11-15T18:04:12.616Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-15T18:04:22.918Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-15T18:04:46.642Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-15T18:08:32.356Z info: app is running
+2023-11-16T05:14:00.788Z info: app is running
+2023-11-16T05:40:17.355Z info: app is running
+2023-11-16T06:00:35.353Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-11-16T06:00:43.538Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-11-16T06:01:17.063Z info: ::1 1 tmebdq_134cLvlzJlFiOwzuUP1MdY5Tmj31jpB4AOuE 200 /api/users/login - Log In!!
+2023-11-16T06:01:20.987Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T06:01:28.399Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T06:15:47.402Z info: app is running
+2023-11-16T06:25:21.046Z info: app is running
+2023-11-16T06:28:58.396Z info: app is running
+2023-11-16T06:33:03.126Z info: app is running
+2023-11-16T06:41:57.760Z info: app is running
+2023-11-16T06:57:46.385Z info: app is running
+2023-11-16T07:28:22.264Z info: app is running
+2023-11-16T07:28:53.256Z info: app is running
+2023-11-16T08:20:43.180Z info: app is running
+2023-11-16T08:22:56.991Z info: app is running
+2023-11-16T08:30:54.463Z info: app is running
+2023-11-16T08:45:28.861Z info: app is running
+2023-11-16T08:46:40.556Z info: app is running
+2023-11-16T08:47:02.048Z info: app is running
+2023-11-16T08:47:19.691Z info: app is running
+2023-11-16T08:47:28.267Z info: app is running
+2023-11-16T08:49:30.326Z info: app is running
+2023-11-16T08:59:59.616Z info: app is running
+2023-11-16T09:00:05.364Z info: app is running
+2023-11-16T09:02:32.815Z info: app is running
+2023-11-16T09:02:40.525Z info: app is running
+2023-11-16T09:07:14.617Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!SequelizeValidationError: notNull Violation: Certificate.serialno cannot be null
+2023-11-16T09:08:35.972Z info: app is running
+2023-11-16T09:09:02.856Z info: app is running
+2023-11-16T09:09:31.497Z info: app is running
+2023-11-16T09:36:08.457Z info: app is running
+2023-11-16T09:36:21.483Z error: ::1 undefined undefined 500 /api/certificate/upload - Internal Server Error!!!TypeError: result.json is not a function
+2023-11-16T09:36:35.754Z info: app is running
+2023-11-16T09:39:30.420Z info: app is running
+2023-11-16T09:39:33.233Z info: app is running
+2023-11-16T09:40:36.014Z info: app is running
+2023-11-16T09:40:44.841Z info: app is running
+2023-11-16T09:40:47.422Z info: app is running
+2023-11-16T09:41:13.505Z info: app is running
+2023-11-16T09:55:23.846Z info: ::1 1 J3-F7hkPWeRAR6voIuTJI-s78qBTmTgvNRy3g7QugY8 200 /api/users/login - Log In!!
+2023-11-16T09:55:26.115Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T09:55:40.687Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 6_150_Vernier_Caliper_0.1-10_mm_LC_0.1_mm_1700127380051.pdf
+2023-11-16T10:04:31.385Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T10:05:17.696Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T10:07:20.534Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T10:12:53.819Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T10:29:21.510Z info: app is running
+2023-11-16T10:30:26.679Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T10:39:10.732Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T10:44:36.248Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-16T10:47:30.624Z info: app is running
+2023-11-16T10:56:09.627Z info: app is running
+2023-11-16T11:02:01.311Z info: app is running
+2023-11-16T11:12:03.428Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2023-11-16T11:15:24.206Z info: app is running
+2023-11-16T14:02:50.040Z info: app is running
+2023-11-17T03:36:58.156Z info: app is running
+2023-11-17T03:50:06.346Z info: ::1 1 sD-LiNAH1jJANvHqOewiwbGIKKaG4O22JwYY7ih80fA 200 /api/users/login - Log In!!
+2023-11-17T03:50:08.863Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-17T04:20:26.080Z info: app is running
+2023-11-17T04:21:14.596Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-17T04:21:19.328Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-17T04:21:38.764Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-17T04:24:46.279Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-17T04:28:12.889Z info: app is running
+2023-11-17T04:44:47.138Z info: app is running
+2023-11-17T04:46:38.099Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-17T10:46:43.427Z info: app is running
+2023-11-18T18:10:12.557Z info: app is running
+2023-11-20T06:11:49.456Z info: app is running
+2023-11-25T12:42:08.024Z info: app is running
+2023-11-25T12:44:49.140Z info: app is running
+2023-11-25T12:44:59.660Z info: app is running
+2023-11-25T12:45:09.004Z info: app is running
+2023-11-25T12:45:11.062Z info: app is running
+2023-11-25T12:45:32.356Z info: app is running
+2023-11-25T12:45:36.155Z info: app is running
+2023-11-25T12:45:51.599Z info: app is running
+2023-11-25T12:46:05.628Z info: app is running
+2023-11-25T12:46:20.625Z info: app is running
+2023-11-25T12:46:31.531Z info: app is running
+2023-11-25T12:46:46.199Z info: app is running
+2023-11-25T12:49:21.700Z info: app is running
+2023-11-25T12:49:36.577Z info: app is running
+2023-11-25T12:51:09.109Z info: app is running
+2023-11-25T12:51:31.740Z info: app is running
+2023-11-25T12:51:35.775Z info: app is running
+2023-11-25T13:43:50.958Z info: app is running
+2023-11-27T11:29:21.184Z info: app is running
+2023-11-27T11:35:37.461Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
+2023-11-27T12:29:31.226Z info: app is running
+2023-11-27T12:35:35.937Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-11-27T12:36:02.315Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-11-27T12:36:53.646Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_labId_fkey"
+2023-11-27T12:37:13.987Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2023-11-27T12:45:59.692Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_labId_fkey"
+2023-11-27T12:57:11.887Z info: app is running
+2023-11-27T13:02:53.384Z info: app is running
+2023-11-27T13:07:24.273Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-11-27T13:08:16.897Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
+2023-11-27T13:18:54.419Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-11-27T13:22:34.254Z info: app is running
+2023-11-27T13:25:10.058Z info: app is running
+2023-11-27T13:25:13.146Z info: app is running
+2023-11-27T13:25:20.393Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeDatabaseError: invalid input syntax for type integer: "'2'"
+2023-11-27T13:25:49.914Z info: app is running
+2023-11-27T13:25:54.052Z info: app is running
+2023-11-27T13:26:35.017Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
+2023-11-27T13:26:58.313Z info: app is running
+2023-11-27T13:27:17.102Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-11-27T13:30:18.832Z info: ::1 7 lkU7n54NZKXF00lOBoswoEgpyIgEtMyY6SFzhg2CogI 200 /api/users/login - Log In!!
+2023-11-27T17:49:17.154Z info: app is running
+2023-11-27T17:50:12.197Z info: app is running
+2023-11-27T17:55:14.760Z info: app is running
+2023-11-27T17:57:12.418Z info: app is running
+2023-11-27T17:57:26.940Z info: app is running
+2023-11-27T17:57:41.506Z info: app is running
+2023-11-27T17:57:45.456Z info: app is running
+2023-11-27T17:58:27.223Z info: app is running
+2023-11-27T17:59:23.385Z info: app is running
+2023-11-27T18:06:19.774Z info: app is running
+2023-11-27T18:09:20.316Z info: app is running
+2023-11-27T18:17:18.465Z error: ::1 undefined undefined undefined undefined - request entity too large
+2023-11-27T18:31:28.305Z info: app is running
+2023-11-27T18:33:43.966Z info: app is running
+2023-11-27T18:35:58.698Z info: app is running
+2023-11-27T18:46:30.542Z info: app is running
+2023-11-27T18:59:50.695Z info: app is running
+2023-11-27T19:01:27.400Z info: app is running
+2023-11-28T05:07:00.990Z info: app is running
+2023-11-28T05:08:43.685Z info: ::1 7 zBIpyePl3w8huAh1xYpmdHd13DzOHhVDR1VKqrbHcr8 200 /api/users/login - Log In!!
+2023-11-28T05:08:45.544Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-11-28T05:08:49.376Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_Vernier_Caliper_0.2-0.96_mm_LC_0.55_mm_Size_5_mm_1701148087080.pdf
+2023-11-28T05:09:32.072Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_Vernier_Caliper_0.2-0.96_mm_LC_0.55_mm_Size_5_mm_1701148087080.pdf
+2023-11-28T05:10:35.381Z info: app is running
+2023-11-28T05:57:36.142Z info: app is running
