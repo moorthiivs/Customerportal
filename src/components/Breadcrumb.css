@@ -1,0 +1,8 @@
+.MuiBreadcrumbs-li,
+.MuiBreadcrumbs-separator {
+  color: aliceblue;
+}
+
+.MuiBreadcrumbs-li p {
+  color: white;
+}

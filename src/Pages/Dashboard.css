@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&family=STIX+Two+Text:ital@1&display=swap");
+
+.inline-flex {
+  display: inline-flex;
+  background-size: cover;
+}
+
+.user-info {
+  margin-top: 0.3rem;
+  width: 90%;
+  padding: 0.5rem;
+  display: flex;
+}
+
+.makeStyles-toolbar-9 {
+  width: 10%;
+}
+
+.wrapped {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+.wrapped h1 {
+  font-family: "Oswald", sans-serif;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: rgb(158, 44, 224);
+}
+
+.wrapped h2 {
+  font-family: "STIX Two Text", serif;
+}
+
+.MuiTabs-flexContainer {
+  justify-content: space-around;
+}
+
+.new_file_modal, .new_user_modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.new_file_modal h2,.new_user_modal h2{
+  font-size: 1.5rem;
+  width: 100%;
+  padding:1rem;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button_container{
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.new_file_error, .new_user_error{
+  color:red;
+}
+
+.new_file_success{
+  color:blue;
+}
+
+.new_user_success{
+  color:green;
+}
+.new_user_modal label{
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media only screen and (min-width: 1440px) {
+  .MuiBreadcrumbs-root {
+    width: 20%;
+  }
+  .tablist {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .MuiBreadcrumbs-root {
+    width: 18%;
+  }
+  .tablist {
+    width: 60%;
+  }
+}

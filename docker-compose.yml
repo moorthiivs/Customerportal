@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  web_tier:
+    container_name: web_tier
+    # using newly created image web_tier
+    image: web_tier
+    ports:
+      - "3000:3000"
+
+networks:
+  default:
+    external: true
+    name: fsdev

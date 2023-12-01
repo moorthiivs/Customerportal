@@ -1,0 +1,41 @@
+.srfs__table {
+  width: 100%;
+  max-width: calc(100vw - 120px);
+  padding: 0.5rem 0 1rem 0;
+}
+
+.searchers__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.certificate__modal {
+  width: 95vw !important;
+  height: 100vh !important;
+}
+
+a:link,
+a:visited {
+  background-color: #27ec3b;
+  color: white;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  text-align: center;
+  background-color: #27ecdb;
+}
+
+
+table tbody tr td {
+  vertical-align: middle;
+}

@@ -1,0 +1,50 @@
+{
+  "menuStructure": {
+    "menuList": [
+      {
+        "menuName": "Documents",
+        "menuAccess": "B",
+        "menuStatus": "E",
+        "menuIcon": "InboxIcon",
+        "menuDtls": [
+          {
+            "subMenuName": "Document 1",
+            "subMenuAccess": "B",
+            "subMenuStatus": "E",
+            "subMenuIcon": "PictureAsPdfOutlined",
+            "subMenuComponent": "Document1"
+          },
+          {
+            "subMenuName": "Document 2",
+            "subMenuAccess": "B",
+            "subMenuStatus": "E",
+            "subMenuIcon": "PictureAsPdfOutlined",
+            "subMenuComponent": "Document2"
+          },
+          {
+            "subMenuName": "Document 3",
+            "subMenuAccess": "B",
+            "subMenuStatus": "E",
+            "subMenuIcon": "PictureAsPdfOutlined",
+            "subMenuComponent": "Document3"
+          }
+        ]
+      },
+      {
+        "menuName": "Users",
+        "menuAccess": "B",
+        "menuStatus": "E",
+        "menuIcon": "PeopleAltOutlined",
+        "menuDtls": [
+          {
+            "subMenuName": "user1",
+            "subMenuAccess": "B",
+            "subMenuStatus": "E",
+            "subMenuIcon": "PersonOutlineOutlined",
+            "subMenuComponent": "user1"
+          }
+        ]
+      }
+    ]
+  }
+}
