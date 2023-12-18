@@ -740,3 +740,209 @@
 2023-11-28T05:09:32.072Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_Vernier_Caliper_0.2-0.96_mm_LC_0.55_mm_Size_5_mm_1701148087080.pdf
 2023-11-28T05:10:35.381Z info: app is running
 2023-11-28T05:57:36.142Z info: app is running
+2023-12-03T05:40:37.014Z info: app is running
+2023-12-08T08:00:17.780Z info: app is running
+2023-12-08T08:13:11.159Z info: app is running
+2023-12-08T08:41:36.504Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-08T08:44:18.906Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-08T08:44:56.706Z info: ::1 1 5LHqQy9Nnu_orXlnqYiVWBbE7NCQJNdUI5h6U9owvVY 200 /api/users/login - Log In!!
+2023-12-08T08:44:58.772Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-08T08:47:07.349Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-08T08:47:21.846Z info: ::1 2 8omS1XrChbI2ocKqrvOShMW8Vi0v1y2YViz9Skia-_E 200 /api/users/login - Log In!!
+2023-12-08T08:47:23.860Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-08T09:45:39.173Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2023-12-08T09:45:40.674Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2023-12-08T09:45:45.515Z info: ::1 1 L8DHwVNShf8JLzTR6NSaV6g-YU3oCPUbI3kn5nigsZM 200 /api/users/login - Log In!!
+2023-12-08T09:46:02.316Z info: app is running
+2023-12-08T09:46:57.822Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-08T09:47:54.198Z info: ::1 3 WbTO-BFiF70kFG8z3wGb9FrYPaPlgBhfuF7Ez1wVb6E 200 /api/users/login - Log In!!
+2023-12-08T09:50:31.698Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-08T09:50:49.151Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-08T09:51:28.376Z info: ::1 4 rdXL5Uz_NqdFhneliB5TKaKGU5aSI83HEC1cNu2jVKw 200 /api/users/login - Log In!!
+2023-12-08T10:42:42.419Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-08T10:47:35.942Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-08T10:56:06.013Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-08T10:58:21.053Z info: ::1 5 cU9YAYZ2pgkDxflMJYbrXDVKSulRKk-KE2zFhRgKrlE 200 /api/users/login - Log In!!
+2023-12-08T10:58:23.068Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-08T13:06:32.799Z info: app is running
+2023-12-08T16:15:50.511Z info: app is running
+2023-12-08T16:19:39.553Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-08T16:29:40.468Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-08T16:31:13.944Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-08T17:00:48.015Z info: app is running
+2023-12-09T05:15:20.780Z info: app is running
+2023-12-09T05:23:24.006Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-09T05:26:03.897Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-09T05:29:27.164Z error: ::1 undefined undefined ENOENT C:\Users\thelo\OneDrive\Documents\calibmaster-certificate\customer-portal-backend\certificates\certificate.pdf - ENOENT: no such file or directory, open 'C:\Users\thelo\OneDrive\Documents\calibmaster-certificate\customer-portal-backend\certificates\certificate.pdf'
+2023-12-09T05:33:58.608Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:34:29.357Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:34:51.276Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:35:51.360Z info: app is running
+2023-12-09T05:36:02.279Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:36:12.640Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:36:35.539Z info: app is running
+2023-12-09T05:36:55.933Z info: app is running
+2023-12-09T05:36:58.863Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:37:15.895Z info: app is running
+2023-12-09T05:37:51.130Z info: ::1 1 Qp3h5zhLaBMHhKZYCtRbQVBHLLlGMkcVbSo2rbBU55c 200 /api/users/login - Log In!!
+2023-12-09T05:37:53.234Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-09T05:43:14.315Z info: ::1 undefined undefined 200 /api/company/new - Adding New Company!!
+2023-12-09T05:44:33.425Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-09T05:44:45.133Z info: ::1 2 2uKBmj7vtYPijshUj5JgJcO5UPSSW7wSjN45WpKqspU 200 /api/users/login - Log In!!
+2023-12-09T05:44:46.836Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-09T05:48:10.632Z info: app is running
+2023-12-09T05:54:17.278Z info: ::1 2 F5YRUsJbZTKnpSB7f2QDdaruXqi2LyyHhCQuFS513Dk 200 /api/users/login - Log In!!
+2023-12-09T05:54:19.187Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-09T05:54:38.211Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-09T08:52:09.910Z info: app is running
+2023-12-09T11:02:46.667Z info: app is running
+2023-12-09T11:49:32.645Z info: app is running
+2023-12-09T11:53:28.722Z info: app is running
+2023-12-09T11:53:36.360Z info: app is running
+2023-12-09T11:53:54.786Z info: app is running
+2023-12-09T11:54:07.018Z info: app is running
+2023-12-09T11:57:17.113Z info: app is running
+2023-12-09T12:03:24.546Z info: app is running
+2023-12-09T12:03:30.342Z info: app is running
+2023-12-09T12:03:33.277Z info: app is running
+2023-12-09T12:03:41.771Z info: app is running
+2023-12-09T12:03:58.005Z info: app is running
+2023-12-09T12:04:16.451Z info: app is running
+2023-12-09T12:04:20.691Z info: app is running
+2023-12-09T12:04:30.942Z info: app is running
+2023-12-09T12:05:30.533Z info: app is running
+2023-12-09T12:05:56.708Z info: app is running
+2023-12-09T12:09:15.118Z info: app is running
+2023-12-09T12:09:27.265Z info: app is running
+2023-12-09T12:10:02.861Z info: app is running
+2023-12-09T12:10:14.066Z info: app is running
+2023-12-09T12:10:30.813Z info: app is running
+2023-12-09T12:10:32.998Z info: app is running
+2023-12-09T12:11:10.557Z info: app is running
+2023-12-09T12:11:14.400Z info: app is running
+2023-12-09T12:11:16.799Z info: app is running
+2023-12-09T12:11:22.515Z info: app is running
+2023-12-09T12:11:38.476Z info: app is running
+2023-12-09T12:12:28.856Z info: app is running
+2023-12-09T12:12:32.913Z info: app is running
+2023-12-09T12:13:02.253Z info: app is running
+2023-12-09T12:13:11.143Z info: app is running
+2023-12-09T12:13:13.257Z info: app is running
+2023-12-09T12:13:48.425Z info: app is running
+2023-12-09T12:14:09.754Z info: app is running
+2023-12-09T12:14:12.985Z info: app is running
+2023-12-09T12:14:17.706Z info: app is running
+2023-12-09T12:14:28.857Z info: app is running
+2023-12-09T12:15:20.539Z info: app is running
+2023-12-09T12:15:23.013Z info: app is running
+2023-12-09T12:15:26.677Z info: app is running
+2023-12-09T12:15:35.682Z info: app is running
+2023-12-09T12:15:47.718Z info: app is running
+2023-12-09T12:25:27.579Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-09T13:05:39.166Z info: app is running
+2023-12-11T04:48:32.009Z info: app is running
+2023-12-11T06:34:28.143Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:14.352Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:23.875Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:23.889Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:33.786Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:50:30.165Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:52:48.020Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:52:48.029Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:14.890Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:31.936Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:44.911Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:50.807Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:55.793Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:55:16.956Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T09:32:43.217Z info: app is running
+2023-12-11T09:36:11.545Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:37:38.200Z info: app is running
+2023-12-11T09:40:07.053Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:41:14.725Z info: app is running
+2023-12-11T09:42:22.844Z info: app is running
+2023-12-11T09:43:01.520Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:44:40.602Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:46:09.823Z info: app is running
+2023-12-11T09:46:30.600Z info: app is running
+2023-12-11T09:46:38.160Z info: app is running
+2023-12-11T09:47:57.395Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:50:13.959Z info: app is running
+2023-12-11T09:51:13.299Z info: app is running
+2023-12-11T09:59:21.512Z info: app is running
+2023-12-11T10:10:30.087Z info: app is running
+2023-12-11T10:15:16.414Z error: ::1 undefined undefined undefined undefined - request entity too large
+2023-12-11T10:15:24.333Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:15:24.345Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:17:44.867Z info: app is running
+2023-12-11T10:18:19.795Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:18:19.815Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:18:28.358Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:18:28.380Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:20:41.729Z info: app is running
+2023-12-11T10:27:20.742Z info: app is running
+2023-12-11T10:38:28.533Z error: ::1 undefined undefined undefined undefined - request entity too large
+2023-12-11T10:38:55.542Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:38:55.560Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:39:08.601Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:43:47.690Z info: app is running
+2023-12-11T10:49:12.579Z info: app is running
+2023-12-11T10:54:59.096Z info: app is running
+2023-12-11T10:55:10.937Z info: app is running
+2023-12-11T10:55:18.104Z info: app is running
+2023-12-11T13:06:18.904Z info: app is running
+2023-12-11T13:07:33.766Z info: app is running
+2023-12-11T13:08:12.280Z info: app is running
+2023-12-11T13:08:45.777Z info: app is running
+2023-12-11T13:08:57.866Z info: app is running
+2023-12-11T13:09:10.528Z info: app is running
+2023-12-11T13:09:18.480Z info: app is running
+2023-12-11T13:09:56.512Z info: app is running
+2023-12-11T13:36:30.298Z info: app is running
+2023-12-11T13:49:32.282Z info: app is running
+2023-12-11T14:03:03.425Z info: app is running
+2023-12-11T14:11:59.510Z info: app is running
+2023-12-11T14:12:34.409Z info: app is running
+2023-12-11T14:14:09.004Z info: app is running
+2023-12-11T14:20:51.138Z info: app is running
+2023-12-11T14:20:57.498Z info: app is running
+2023-12-11T14:21:23.392Z info: app is running
+2023-12-11T14:21:30.508Z info: app is running
+2023-12-11T14:21:39.817Z info: app is running
+2023-12-11T14:21:51.752Z info: app is running
+2023-12-11T14:22:01.363Z info: app is running
+2023-12-11T14:22:24.888Z info: app is running
+2023-12-11T14:22:28.196Z info: app is running
+2023-12-11T14:26:30.357Z info: app is running
+2023-12-11T14:26:39.504Z info: app is running
+2023-12-11T14:27:17.012Z info: app is running
+2023-12-11T14:28:21.011Z error: ::1 undefined undefined 401 undefined - Customer Not Exists!!
+2023-12-12T05:34:55.845Z info: app is running
+2023-12-12T06:27:00.832Z info: app is running
+2023-12-12T06:49:45.444Z info: app is running
+2023-12-12T06:53:46.064Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-12T06:55:39.435Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-12T06:56:39.196Z info: app is running
+2023-12-12T08:05:58.452Z info: app is running
+2023-12-12T08:06:04.032Z info: app is running
+2023-12-12T08:06:10.908Z info: app is running
+2023-12-12T08:06:34.436Z info: app is running
+2023-12-12T08:06:43.680Z info: app is running
+2023-12-12T08:06:46.408Z info: app is running
+2023-12-12T08:07:07.776Z info: app is running
+2023-12-12T08:07:44.033Z info: app is running
+2023-12-12T08:07:52.512Z info: app is running
+2023-12-12T08:07:59.109Z info: app is running
+2023-12-12T08:08:13.963Z info: app is running
+2023-12-12T08:08:18.339Z info: app is running
+2023-12-12T08:08:27.292Z info: app is running
+2023-12-12T10:42:55.401Z info: ::1 1 pz0okkSNI4vLnYqTWkXFSUdZQiKL52isONgfBd6lALM 200 /api/users/login - Log In!!
+2023-12-12T10:42:56.977Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-12T10:46:13.818Z info: ::1 200 /api/certificate/list - Get Certificates List
+2023-12-12T10:46:42.058Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1_1_Rinah_Brown_34-10_Atque_mollitia_paria_LC_58_Atque_mollitia_paria_Size_25_Atque_mollitia_paria_1702377959048.pdf
+2023-12-12T11:24:44.658Z info: app is running
+2023-12-15T14:01:34.432Z info: app is running
+2023-12-15T17:41:11.621Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-15T17:42:31.804Z info: app is running
+2023-12-16T12:00:27.138Z info: app is running
+2023-12-18T05:37:42.798Z info: app is running

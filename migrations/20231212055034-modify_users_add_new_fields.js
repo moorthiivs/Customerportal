@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -9,14 +9,11 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    await queryInterface.addColumn("Users", "companyId", {
-      type: Sequelize.DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: "Companies",
-        key: "id",
-      },
-    });
+
+    await queryInterface.addColumn('Users', 'calibmaster_client_id', {
+      type: Sequelize.STRING,
+      allowNull: false
+    })
   },
 
   async down(queryInterface, Sequelize) {
@@ -26,6 +23,9 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-    await queryInterface.removeColumn("Users", "companyId");
-  },
+
+    return Promise.all([
+      queryInterface.removeColumn('Users', 'calibmaster_client_id')
+    ]);
+  }
 };

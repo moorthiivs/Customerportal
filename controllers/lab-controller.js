@@ -10,6 +10,7 @@ const addlab = async (req, res, next) => {
 
   const {
     lab_name,
+    calibmaster_lab_id,
     address1,
     address2,
     address3,
@@ -44,6 +45,9 @@ const addlab = async (req, res, next) => {
     other_logo2_image_mime_type,
     other_logo2_image,
 
+    created_by_login_name,
+    created_by_user_id,
+
     adminName,
     adminEmail,
     adminPassword,
@@ -56,8 +60,9 @@ const addlab = async (req, res, next) => {
   //Checking lab in Database
   let existingLab;
   try {
-    existingLab = await Lab.findOne({ where: { email: contact_email, rstatus: 1 } });
+    existingLab = await Lab.findOne({ where: { contact_email, rstatus: 1 } });
   } catch (err) {
+    console.log(err);
     const error = new Error("Internal Server Error!!");
     error.code = 500;
     return errorHandler(error, req, res, next);
@@ -107,20 +112,63 @@ const addlab = async (req, res, next) => {
   // *** Creating Lab ***
   try {
     const newLab = new Lab({
-      name: lab_name,
+      lab_name: lab_name,
+      calibmaster_lab_id,
       address1,
       address2,
       address3,
-      email: contact_email,
-      contactNumber: contact_number1,
+
+      city,
+      state,
+      country,
+      pincode,
+
+      lab_website,
+      contact_email,
+      contact_number1,
+      contact_number2,
+
       symbol,
-      limageName: mainLogoImgFileName,
-      limageType: brand_logo_mime_type,
-      limageData: buff1,
       rstatus: 1,
+
+      email_smtp_server_host,
+      email_smtp_server_port,
+      sender_email,
+      sender_password,
+
+      gst_number,
+      lab_active_flag: 1,
+
+      brand_logo_filename: mainLogoImgFileName,
+      brand_logo_mime_type: brand_logo_mime_type,
+      brand_logo: buff1,
+
+      other_logo1_image_filename: "--",
+      other_logo1_image_mime_type: "--",
+      other_logo1_image: buff1,
+
+      other_logo2_image_filename: "--",
+      other_logo2_image_mime_type: "--",
+      other_logo2_image: buff1,
+
+      created_timestamp: Date.now(),
+      created_by_login_name,
+      created_by_user_id,
+
+      updated_timestamp: Date.now(),
+      effective_start_date: Date.now() + 1000 * 60 * 60 * 24 * 364 * 3000,
+      effective_end_date: Date.now() + 1000 * 60 * 60 * 24 * 364 * 3000,
+
     });
     const result = await newLab.save();
     console.log(result);
+
+    //Retuning 200 response
+    return res.status(201).json({
+      status: "SUCCESS",
+      code: 201,
+      message: "Lab Added Successfully In Customer Portal"
+    });
 
   } catch (err) {
     console.log(err);
@@ -128,13 +176,34 @@ const addlab = async (req, res, next) => {
     error.code = 500;
     return errorHandler(error, req, res, next);
   }
+};
 
-  //Retuning 200 response
-  return res.status(201).json({
+const fetchLab = async (req, res, next) => {
+
+  const { calibmaster_lab_id } = req.params
+
+  const customerLab = await Lab.findOne(
+    {
+      attributes: { exclude: ['brand_logo', 'other_logo1_image', 'other_logo2_image'] },
+      where: {
+        calibmaster_lab_id
+      }
+    }
+  );
+
+  if (!customerLab) {
+    const error = new Error("Customer Lab Not Exists!!");
+    error.code = 401;
+    return errorHandler(error, req, res, next);
+  }
+
+  return res.status(200).json({
     status: "SUCCESS",
-    code: 201,
-    message: "Lab Added Successfully In Customer Portal"
+    code: 200,
+    customerLab,
+    message: "Customer lab successfully fetched In customer-portal"
   });
 };
 
 exports.addlab = addlab;
+exports.fetchLab = fetchLab;

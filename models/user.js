@@ -25,20 +25,19 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    labId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    companyId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    calibmaster_client_id: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   });
-  User.associate = function (models) {
-    User.belongsTo(models.Lab, {
-      as: "lab",
-      constrains: true,
-      onDelete: "CASCADE",
-      foreignKey: "labId",
-    });
-    User.belongsTo(models.Company, {
-      as: "company",
-      constrains: true,
-      onDelete: "CASCADE",
-      foreignKey: "companyId",
-    });
-  };
+
   return User;
 };

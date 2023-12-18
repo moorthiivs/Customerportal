@@ -22,8 +22,11 @@ const schema = {
     labId: {
       type: "number",
     },
+    calibmaster_client_id: {
+      type: "number",
+    },
   },
-  required: ["name", "email", "password", "companyId","labId"],
+  required: ["name", "email", "password", "companyId", "labId", "calibmaster_client_id"],
   additionalProperties: true,
 };
 

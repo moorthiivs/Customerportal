@@ -12,4 +12,6 @@ router.post("/adduser", usersController.adduser);
 
 router.post("/deleteuser", usersController.deleteuser);
 
+router.get("/fetchClient/:calibmaster_client_id", usersController.fetchClient);
+
 module.exports = router;

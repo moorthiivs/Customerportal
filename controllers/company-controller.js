@@ -2,6 +2,7 @@ const logger = require("../utils/logger");
 const { errorHandler } = require("../helpers/error-handler");
 const companySchema = require("../schemas/company");
 const Company = require("../models").Company;
+
 const newcompanyHandler = async (req, res, next) => {
   //AJV Validation
   const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
@@ -23,7 +24,7 @@ const newcompanyHandler = async (req, res, next) => {
   //   return errorHandler(error, req, res, next);
   // }
 
-  const { id, companyname, email, address1, address2, address3, labId } = req.body;
+  const { id, companyname, email, address1, address2, address3, labId, calibmaster_customer_id } = req.body;
 
   // create customer object for validation and store in database
   let customerObj = {};
@@ -50,12 +51,18 @@ const newcompanyHandler = async (req, res, next) => {
 
   customerObj.lab_id = req.body.labId;
 
+  console.log(req.body.labId);
+  console.log(req.body.calibmaster_customer_id);
 
   //Checking Company in Database
   let existingCompany;
   try {
     existingCompany = await Company.findOne({
-      where: { email: customerContactObj.contact_email, labId: customerObj.lab_id, rstatus: 1 },
+      where: {
+        email: customerContactObj.contact_email,
+        labId: customerObj.lab_id,
+        rstatus: 1
+      },
     });
   } catch (err) {
     isError = true;
@@ -86,10 +93,19 @@ const newcompanyHandler = async (req, res, next) => {
       address2: customerObj.address2,
       address3: customerObj.address3,
       labId: customerObj.lab_id,
+      calibmaster_customer_id,
       rstatus: 1,
     });
     const newcompany = await createdCompany.save();
+    console.log(newcompany);
+
+    return res.status(201).json({
+      status: "SUCCESS",
+      code: 201,
+      message: "Company Added Successfully",
+    });
   } catch (err) {
+    console.log(err);
     isError = true;
     code = 500;
     action = "Internal Server Error!!" + err;
@@ -98,16 +114,33 @@ const newcompanyHandler = async (req, res, next) => {
     error.path = path;
     return errorHandler(error, req, res, next);
   }
-  //Retuning 200 response
-  if (isError == false) {
-    let message = `${ip} ${userId} ${sessionId} ${code} ${path} - ${action}`;
-    logger.info(message);
-    res.status(code).json({
-      status: "SUCCESS",
-      code: code,
-      message: "Company Added Successfully",
-    });
+};
+
+const fetchCompany = async (req, res, next) => {
+
+  const { calibmaster_customer_id } = req.params
+
+  const customer = await Company.findOne(
+    {
+      where: {
+        calibmaster_customer_id
+      }
+    }
+  );
+
+  if (!customer) {
+    const error = new Error("Customer Not Exists!!");
+    error.code = 401;
+    return errorHandler(error, req, res, next);
   }
+
+  return res.status(200).json({
+    status: "SUCCESS",
+    code: 200,
+    customer,
+    message: "Customer successfully fetched In customer-portal"
+  });
 };
 
 exports.newcompanyHandler = newcompanyHandler;
+exports.fetchCompany = fetchCompany;

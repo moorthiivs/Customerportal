@@ -38,25 +38,10 @@ const login = async (req, res, next) => {
   let existingUser;
   try {
     existingUser = await User.findOne({
-      where: { email: email, rstatus: 1 },
-      include: [
-        {
-          model: Lab,
-          as: "lab",
-          attributes: {
-            exclude: [
-              "createdAt",
-              "updatedAt",
-              "address",
-              "email",
-              "id",
-              "contactNumber",
-            ],
-          },
-        },
-      ],
+      where: { email: email, rstatus: 1 }
     });
   } catch (err) {
+    console.log(err);
     isError = true;
     code = 500;
     action = "Internal Server Error!!";
@@ -176,7 +161,7 @@ const adduser = async (req, res, next) => {
   }
   console.log(req.body);
 
-  const { name, email, password, companyId, labId } = req.body;
+  const { name, email, password, companyId, labId, calibmaster_client_id } = req.body;
 
 
   //Checking user in Database
@@ -217,7 +202,7 @@ const adduser = async (req, res, next) => {
     error.path = path;
     return errorHandler(error, req, res, next);
   }
-  //console.log(req.body);
+
   //Creating User in Database
   try {
     const newUser = new User({
@@ -227,6 +212,7 @@ const adduser = async (req, res, next) => {
       companyId,
       rstatus: 1,
       labId,
+      calibmaster_client_id
     });
     const result = await newUser.save();
     console.log(result);
@@ -341,7 +327,31 @@ const deleteuser = async (req, res, next) => {
   }
 };
 
-exports.deleteuser = deleteuser;
+const fetchClient = async (req, res, next) => {
 
+  const { calibmaster_client_id } = req.params;
+
+  const client = await User.findOne(
+    {
+      where: { calibmaster_client_id }
+    }
+  );
+
+  if (!client) {
+    const error = new Error("Client Not Exists!!");
+    error.code = 401;
+    return errorHandler(error, req, res, next);
+  }
+
+  return res.status(200).json({
+    status: "SUCCESS",
+    code: 200,
+    client,
+    message: "Client User successfully fetched In customer-portal"
+  });
+};
+
+exports.deleteuser = deleteuser;
 exports.adduser = adduser;
 exports.login = login;
+exports.fetchClient = fetchClient;

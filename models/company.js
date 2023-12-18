@@ -32,15 +32,15 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    labId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    calibmaster_customer_id: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
   });
-  Company.associate = function (models) {
-    // define association here
-    Company.belongsTo(models.Lab, {
-      as: "lab",
-      constrains: true,
-      onDelete: "CASCADE",
-    });
-  };
 
   return Company;
 };

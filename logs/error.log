@@ -175,3 +175,44 @@
 2023-11-27T13:25:20.393Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeDatabaseError: invalid input syntax for type integer: "'2'"
 2023-11-27T13:26:35.017Z error: ::1 undefined undefined 500 /api/users/adduser - Internal Server Error!!SequelizeForeignKeyConstraintError: insert or update on table "Users" violates foreign key constraint "Users_companyId_fkey"
 2023-11-27T18:17:18.465Z error: ::1 undefined undefined undefined undefined - request entity too large
+2023-12-08T09:45:39.173Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2023-12-08T09:45:40.674Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2023-12-09T05:29:27.164Z error: ::1 undefined undefined ENOENT C:\Users\thelo\OneDrive\Documents\calibmaster-certificate\customer-portal-backend\certificates\certificate.pdf - ENOENT: no such file or directory, open 'C:\Users\thelo\OneDrive\Documents\calibmaster-certificate\customer-portal-backend\certificates\certificate.pdf'
+2023-12-09T05:33:58.608Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:34:29.357Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:34:51.276Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:36:02.279Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:36:12.640Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T05:36:58.863Z error: ::1 undefined undefined 500 /api/users/login - Internal Server Error!!
+2023-12-09T12:25:27.579Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:34:28.143Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:14.352Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:23.875Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:23.889Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:49:33.786Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:50:30.165Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:52:48.020Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:52:48.029Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:14.890Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:31.936Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:44.911Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:50.807Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:53:55.793Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T06:55:16.956Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T09:36:11.545Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:40:07.053Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:43:01.520Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:44:40.602Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T09:47:57.395Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-11T10:15:16.414Z error: ::1 undefined undefined undefined undefined - request entity too large
+2023-12-11T10:15:24.333Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:15:24.345Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:18:19.795Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:18:19.815Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:18:28.358Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:18:28.380Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:38:28.533Z error: ::1 undefined undefined undefined undefined - request entity too large
+2023-12-11T10:38:55.542Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:38:55.560Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T10:39:08.601Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2023-12-11T14:28:21.011Z error: ::1 undefined undefined 401 undefined - Customer Not Exists!!
