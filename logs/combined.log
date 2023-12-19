@@ -946,3 +946,7 @@
 2023-12-15T17:42:31.804Z info: app is running
 2023-12-16T12:00:27.138Z info: app is running
 2023-12-18T05:37:42.798Z info: app is running
+2023-12-18T08:34:52.741Z info: app is running
+2023-12-18T09:39:42.017Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-18T09:57:28.336Z info: app is running
+2023-12-18T10:02:36.261Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
