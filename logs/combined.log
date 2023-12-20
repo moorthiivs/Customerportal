@@ -950,3 +950,8 @@
 2023-12-18T09:39:42.017Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
 2023-12-18T09:57:28.336Z info: app is running
 2023-12-18T10:02:36.261Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2023-12-20T05:18:25.846Z info: app is running
+2023-12-20T05:20:03.577Z error: ::1 undefined undefined 500 undefined - Internal Server Error!!
+2023-12-20T05:24:17.233Z info: app is running
+2023-12-20T17:30:48.959Z info: app is running
+2023-12-20T17:49:30.845Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
