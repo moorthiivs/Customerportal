@@ -47,7 +47,7 @@ const LoginPage = (props) => {
   const loginHandler = (event) => {
     event.preventDefault();
     setisLoaded(false);
-    fetch(config.SERVER.URL + "/api/users/login/", requestOptions)
+    fetch(config.CustomerPortal.URL + "/api/users/login/", requestOptions)
       .then(async (response) => {
         const data = await response.json();
         setisLoaded(true);

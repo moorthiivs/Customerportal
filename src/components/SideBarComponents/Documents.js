@@ -52,9 +52,9 @@ const Documents = (props) => {
     PictureAsPdfOutlined: PictureAsPdfOutlined,
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     props.currentItemHandler(current);
-  },[current]);
+  }, [current]);
 
   useEffect(() => {
     let opens = [...open];
@@ -75,7 +75,7 @@ const Documents = (props) => {
         "Content-Type": "application/json",
       },
     };
-    fetch(config.SERVER.URL + "/api/resources/getMenu", requestOptions)
+    fetch(config.CustomerPortal.URL + "/api/resources/getMenu", requestOptions)
       .then(async (response) => {
         const data = await response.json();
         console.log(data);
@@ -85,108 +85,108 @@ const Documents = (props) => {
         console.log(err);
       });
   }, []);
-let items;
-if(menu){
-  items = menu.menuStructure.menuList.map((v, i) => {
-    let Enclass = "disabled";
-    let menuEnabled = false;
+  let items;
+  if (menu) {
+    items = menu.menuStructure.menuList.map((v, i) => {
+      let Enclass = "disabled";
+      let menuEnabled = false;
 
-    if (v.menuStatus === "E") {
-      Enclass = "enabled";
-      menuEnabled = true;
-    } else {
-      Enclass = "disabled";
-      menuEnabled = false;
-    }
-    var colitems = v.menuDtls.map((val, ind) => {
-      let subEnclass = "disabled";
-      let submenuEnabled = false;
-      if (val.subMenuStatus === "E") {
-        subEnclass = "enabled";
-        submenuEnabled = true;
+      if (v.menuStatus === "E") {
+        Enclass = "enabled";
+        menuEnabled = true;
       } else {
-        subEnclass = "disabled";
-        submenuEnabled = false;
+        Enclass = "disabled";
+        menuEnabled = false;
       }
-      let subiconName = val.subMenuIcon;
-      let SubIcon = icons[subiconName];
-      return (
-        <div className={subEnclass} key={ind}>
-          <ListItem
-            button
-            key={ind}
-            className={classes.nested}
-            onClick={
-              submenuEnabled
-                ? () =>
+      var colitems = v.menuDtls.map((val, ind) => {
+        let subEnclass = "disabled";
+        let submenuEnabled = false;
+        if (val.subMenuStatus === "E") {
+          subEnclass = "enabled";
+          submenuEnabled = true;
+        } else {
+          subEnclass = "disabled";
+          submenuEnabled = false;
+        }
+        let subiconName = val.subMenuIcon;
+        let SubIcon = icons[subiconName];
+        return (
+          <div className={subEnclass} key={ind}>
+            <ListItem
+              button
+              key={ind}
+              className={classes.nested}
+              onClick={
+                submenuEnabled
+                  ? () =>
                     setCurrent(
                       v.menuName +
-                        "/" +
-                        val.subMenuName +
-                        "," +
-                        val.subMenuComponent
+                      "/" +
+                      val.subMenuName +
+                      "," +
+                      val.subMenuComponent
                     )
-                : () => {}
+                  : () => { }
+              }
+            >
+              <ListItemIcon>
+                <SubIcon />
+              </ListItemIcon>
+              <ListItemText primary={val.subMenuName} />
+            </ListItem>
+          </div>
+        );
+      });
+      let menuIconname = v.menuIcon;
+      let MenuIcon = icons[menuIconname];
+
+      return (
+        <div key={i} className={Enclass}>
+          <ListItem key={i}
+            button
+            onClick={
+              menuEnabled
+                ? () => setcOpen(i.toString() + "/" + open[i])
+                : () => { }
             }
           >
             <ListItemIcon>
-              <SubIcon />
+              <MenuIcon />
             </ListItemIcon>
-            <ListItemText primary={val.subMenuName} />
+            <ListItemText primary={v.menuName} />
+            {open[i] ? (
+              <ExpandLess
+                onClick={
+                  menuEnabled
+                    ? () => setcOpen(i.toString() + "/" + open[i])
+                    : () => { }
+                }
+              />
+            ) : (
+              <ExpandMore
+                onClick={
+                  menuEnabled
+                    ? () => setcOpen(i.toString() + "/" + open[i])
+                    : () => { }
+                }
+              />
+            )}
           </ListItem>
+          <Collapse in={open[i]} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              {colitems}
+            </List>
+          </Collapse>
         </div>
       );
     });
-    let menuIconname = v.menuIcon;
-    let MenuIcon = icons[menuIconname];
-
-    return (
-      <div key={i} className={Enclass}>
-        <ListItem key={i}
-          button
-          onClick={
-            menuEnabled
-              ? () => setcOpen(i.toString() + "/" + open[i])
-              : () => {}
-          }
-        >
-          <ListItemIcon>
-            <MenuIcon />
-          </ListItemIcon>
-          <ListItemText primary={v.menuName} />
-          {open[i] ? (
-            <ExpandLess
-              onClick={
-                menuEnabled
-                  ? () => setcOpen(i.toString() + "/" + open[i])
-                  : () => {}
-              }
-            />
-          ) : (
-            <ExpandMore
-              onClick={
-                menuEnabled
-                  ? () => setcOpen(i.toString() + "/" + open[i])
-                  : () => {}
-              }
-            />
-          )}
-        </ListItem>
-        <Collapse in={open[i]} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
-            {colitems}
-          </List>
-        </Collapse>
-      </div>
-    );
-  });
-}
+  }
   return (
-  <>
-  {menu?items[0]:null}
-  {menu && auth.role==='admin'?items[1]:null}
-  
-  </>
+    <>
+      {menu ? items[0] : null}
+      {menu && auth.role === 'admin' ? items[1] : null}
+
+    </>
   );
 };
 

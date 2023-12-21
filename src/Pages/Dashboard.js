@@ -133,7 +133,7 @@ export default function Dashboard() {
       body: JSON.stringify(requestBody),
     };
 
-    fetch(config.SERVER.URL + "/api/certificate/list", requestOptions)
+    fetch(config.CustomerPortal.URL + "/api/certificate/list", requestOptions)
       .then(async (response) => {
         const data = await response.json();
         console.log(data);

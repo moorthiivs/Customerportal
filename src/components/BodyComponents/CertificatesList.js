@@ -44,7 +44,7 @@ const CertificatesList = (props) => {
       body: JSON.stringify(requestBody),
     };
 
-    fetch(config.SERVER.URL + "/api/certificate/download", requestOptions)
+    fetch(config.CustomerPortal.URL + "/api/certificate/download", requestOptions)
       .then((response) => response.blob())
       .then((blob) => {
         let base64String;

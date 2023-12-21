@@ -37,7 +37,7 @@ export default function BodyContent(props) {
         },
         body: JSON.stringify(requestBody),
       };
-      fetch(config.SERVER.URL + "/api/resources/requestHandler", requestOptions)
+      fetch(config.CustomerPortal.URL + "/api/resources/requestHandler", requestOptions)
         .then((response) => response.blob())
         .then((blob) => {
           let base64String;
