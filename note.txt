@@ -1,0 +1,14 @@
+xenon server => 
+
+Replace migration files 
+
+Replace model files 
+
+Create new folder certificates on root directory 
+
+
+users-controller.js => remove lab associate 
+
+existingUser = await User.findOne({
+    where: { email: email, rstatus: 1 }
+});
