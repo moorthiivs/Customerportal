@@ -6,6 +6,7 @@ const labRoutes = require("./routes/lab-routes");
 const companyRoutes = require("./routes/company-routes");
 const certificateRoutes = require("./routes/certificate-routes");
 const calibrationRoutes = require("./routes/calibration-route");
+const uploadCertificateRoutes = require("./routes/upload-certificate-route");
 const testRoutes = require("./routes/test-routes");
 
 var cors = require("cors");
@@ -23,6 +24,7 @@ app.use("/api/lab", labRoutes);
 app.use("/api/company", companyRoutes);
 app.use("/api/certificate", certificateRoutes);
 app.use("/api/calibration", calibrationRoutes);
+app.use("/api/upload", uploadCertificateRoutes);
 app.use("/api/test", testRoutes);
 
 app.get("/*", (req, res) => {
@@ -39,7 +41,7 @@ app.use((error, req, res, next) => {
   const path = error.path;
   const action = error.message;
   let message = `${ip} ${userId} ${sessionId} ${code} ${path} - ${action}`;
-  logger.error(message);
+  // logger.error(message);
   res.status(error.code).json({
     status: "FAILURE",
     message: error.message,
@@ -51,4 +53,4 @@ app.use((error, req, res, next) => {
 const PORT = process.env.PORT || 5001;
 
 app.listen(PORT);
-logger.info("app is running");
+// logger.info("app is running");
