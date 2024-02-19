@@ -9,3 +9,29 @@
 2024-02-13T11:21:57.770Z info: ::1 200 /api/certificate/list - Get Certificates List
 2024-02-13T11:22:06.066Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1707823293104.pdf
 2024-02-13T12:16:55.868Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-14T07:43:13.746Z info: ::1 2 rxmrbWoq2q4yPTTqrAjidpoUcdRHiToZSRMABI4jZik 200 /api/users/login - Log In!!
+2024-02-14T07:43:16.562Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-14T07:43:23.932Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1707896146078.pdf
+2024-02-16T07:49:16.442Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2024-02-17T07:16:40.617Z info: ::1 1 gtTzskV2mPXp2w7DMjZ2q91NEojTopMcPSoUhZ1thaQ 200 /api/users/login - Log In!!
+2024-02-17T07:16:44.290Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-17T07:17:18.764Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1708153140048.pdf
+2024-02-17T07:54:32.694Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-17T07:54:34.679Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1708156289391.pdf
+2024-02-17T07:57:31.997Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1708156289391.pdf
+2024-02-17T08:10:10.167Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-17T08:12:49.299Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-17T09:08:00.195Z info: ::1 1 DEhQfw11gf3VuMLypsdFafnykwbyUvBk4aavoZ88l84 200 /api/users/login - Log In!!
+2024-02-17T09:08:02.382Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-17T09:08:07.982Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1708160758170.pdf
+2024-02-17T09:53:52.753Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-02-17T09:53:54.591Z info: ::1 undefined undefined 200 /api/certificate/download - Get Document 1708163554039.pdf
+2024-02-17T09:56:43.517Z info: ::1 1 tqmTRCDlKNGoxZvof0wx47V7BrC6EI4rgmBYn4yp1HA 200 /api/users/login - Log In!!
+2024-02-19T09:05:19.089Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2024-02-19T09:05:19.128Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2024-02-19T09:20:19.870Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2024-02-19T09:20:19.891Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2024-02-19T09:20:41.801Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2024-02-19T09:20:41.815Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2024-02-19T09:21:40.621Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
+2024-02-19T09:39:38.030Z error: ::1 undefined undefined 401 undefined - Lab Already Exists!!
