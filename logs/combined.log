@@ -35,3 +35,4 @@
 2024-02-19T09:20:41.815Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
 2024-02-19T09:21:40.621Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
 2024-02-19T09:39:38.030Z error: ::1 undefined undefined 401 undefined - Lab Already Exists!!
+2024-02-19T10:06:56.103Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
