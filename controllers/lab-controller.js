@@ -54,7 +54,9 @@ const addlab = async (req, res, next) => {
 
     MainLogo,
     secondLogo,
-    thirdLogo
+    thirdLogo,
+
+    sealLogo
   } = req.body;
 
   //Checking lab in Database
@@ -172,9 +174,9 @@ const addlab = async (req, res, next) => {
 
   } catch (err) {
     console.log(err);
-    const error = new Error("Internal Server Error!!");
-    error.code = 500;
-    return errorHandler(error, req, res, next);
+    // const error = new Error("Internal Server Error!!");
+    // error.code = 500;
+    // return errorHandler(error, req, res, next);
   }
 };
 
