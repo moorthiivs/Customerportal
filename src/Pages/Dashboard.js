@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -27,6 +27,7 @@ import BodyContent from "../components/BodyContent";
 import { AuthContext } from "../context/auth-context";
 import { useContext } from "react";
 import config from "../utils/config.json";
+import packageconfig from '../../package.json'
 
 const drawerWidth = 300;
 const containerStyles = {
@@ -106,6 +107,9 @@ export default function Dashboard() {
   const [open, setOpen] = useState(false);
   const [certificateslist, setCertificatesList] = useState();
 
+  let frontEndVersion=packageconfig?.version || '0.0.0';
+  const [backEndVersion, setBackEndVersion] = useState(null);
+
   const [isLoaded, setIsLoaded] = useState();
 
   const handleDrawerOpen = () => {
@@ -136,7 +140,6 @@ export default function Dashboard() {
     fetch(config.CustomerPortal.URL + "/api/certificate/list", requestOptions)
       .then(async (response) => {
         const data = await response.json();
-        console.log(data);
         setCertificatesList(data.data);
         setIsLoaded(true);
       })
@@ -144,6 +147,23 @@ export default function Dashboard() {
         console.log(err);
       });
   };
+
+  useEffect(()=>{
+    const requestOptions = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    fetch(config.CustomerPortal.URL + "/api/heartbeat/check", requestOptions)
+      .then(async (response) => {
+        const data = await response.json();
+        setBackEndVersion(data?.version || '0.0.0');
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+  },[])
 
   return (
     <div className={classes.root}>
@@ -194,7 +214,7 @@ export default function Dashboard() {
             <Avatar
               src="images/CalibMaster_Logo2.png"
               assistiveText="iviewsense"
-              title="iviewsense"
+              title={`iviewsense\nversion fe:${frontEndVersion} be:${backEndVersion}`}
               size="large"
             />
             <div className="wrapped">
