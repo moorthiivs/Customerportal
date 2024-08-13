@@ -214,7 +214,7 @@ export default function Dashboard() {
             <Avatar
               src="images/CalibMaster_Logo2.png"
               assistiveText="iviewsense"
-              title={`iviewsense\nversion fe:${frontEndVersion} be:${backEndVersion}`}
+              title={`iviewsense\nversion ${frontEndVersion}/${backEndVersion}`}
               size="large"
             />
             <div className="wrapped">
