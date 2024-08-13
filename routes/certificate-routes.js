@@ -2,6 +2,7 @@ const express = require("express");
 const multer = require("multer");
 
 const certificateController = require("../controllers/certificate-controller");
+const syncCertificateController = require("../controllers/Sync_certificateController");
 
 const router = express.Router();
 const storage = multer.diskStorage({
@@ -19,5 +20,10 @@ router.post("/upload", upload.single("file"), certificateController.certificateU
 router.post("/list", certificateController.listcertificatesHandler);
 
 router.post("/download", certificateController.certificateDownloader);
+
+router.post(
+  "/postCertificateData",
+  syncCertificateController.postCertificateData
+);
 
 module.exports = router;
