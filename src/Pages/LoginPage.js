@@ -46,6 +46,7 @@ const LoginPage = (props) => {
 
   const loginHandler = (event) => {
     event.preventDefault();
+
     setisLoaded(false);
     fetch(config.CustomerPortal.URL + "/api/users/login/", requestOptions)
       .then(async (response) => {
@@ -76,6 +77,7 @@ const LoginPage = (props) => {
         setError(error.message);
       });
   };
+
   if (redirect) {
     return <Redirect to="/dashboard" />;
   } else {

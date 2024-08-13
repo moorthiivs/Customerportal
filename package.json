@@ -1,12 +1,10 @@
 {
-  "name": "reactfed",
-  "version": "0.1.0",
+  "name": "cp-frontend",
+  "version": "4.0.1",
   "private": true,
-  "author": {
-    "name": "Vadivelu K",
-    "email": "vadivelu@iviewsense.com",
-    "url": "https://vadivelk.herokuapp.com"
-  },
+  "description": "Calibmaster Software",
+  "author": "iviewsense ltd,chennai",
+  "license": "proprietary",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
