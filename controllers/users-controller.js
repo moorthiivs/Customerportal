@@ -103,7 +103,7 @@ const login = async (req, res, next) => {
         companyId: existingUser.companyId,
       },
       config.TOKEN_SECRET,
-      { expiresIn: "1h" }
+      { expiresIn: "5h" }
     );
   } catch (err) {
     isError = true;
@@ -351,7 +351,51 @@ const fetchClient = async (req, res, next) => {
   });
 };
 
+const resetPassword = async (req, res, next) => {
+
+  const { password, calibmaster_client_id } = req.body;
+
+  if (!password || !calibmaster_client_id) {
+    let action = "All fields are required";
+    const error = new Error(action);
+    error.code = 500;
+    return errorHandler(error, req, res, next);
+  }
+
+  try {
+    const findUser = await User.findOne({
+      where: { calibmaster_client_id }
+    });
+
+    // Check if user exist on database
+    if (!findUser) {
+      const error = new Error("User not found");
+      error.code = 500;
+      return errorHandler(error, req, res, next);
+    }
+
+    //Encrypting the password
+    let hashedPassword = await bcrypt.hash(password, 12);
+
+    let response = await User.update(
+      { password: hashedPassword },
+      { where: { calibmaster_client_id: calibmaster_client_id } }
+    );
+
+    return res.status(200).json({
+      msg: response, message: "Record updated successfully!!!"
+    });
+
+  } catch (err) {
+    let action = "Something went wrong, please try again";
+    const error = new Error(action);
+    error.code = 500;
+    return errorHandler(error, req, res, next);
+  }
+}
+
 exports.deleteuser = deleteuser;
 exports.adduser = adduser;
 exports.login = login;
 exports.fetchClient = fetchClient;
+exports.resetPassword = resetPassword;

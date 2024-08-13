@@ -15,6 +15,8 @@ router.post("/deleteuser", usersController.deleteuser);
 
 router.get("/fetchClient/:calibmaster_client_id", usersController.fetchClient);
 
+router.post("/reset-password", usersController.resetPassword);
 router.post("/postUserData", syncUserController.postUserData)
 
 module.exports = router;
+
