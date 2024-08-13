@@ -36,3 +36,21 @@
 2024-02-19T09:21:40.621Z error: ::1 undefined undefined 401 undefined - Customer Lab Not Exists!!
 2024-02-19T09:39:38.030Z error: ::1 undefined undefined 401 undefined - Lab Already Exists!!
 2024-02-19T10:06:56.103Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2024-03-20T05:55:03.946Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2024-04-09T12:57:17.683Z error: ::1 undefined undefined 401 Authorization - Error while Decoding Token!!
+2024-04-09T12:57:47.512Z error: ::1 undefined undefined 500 undefined - All fields are required
+2024-04-09T13:03:05.519Z error: ::1 undefined undefined 500 undefined - All fields are required
+2024-04-09T13:03:08.004Z error: ::1 undefined undefined 500 undefined - All fields are required
+2024-04-09T13:16:54.806Z error: ::1 undefined undefined 401 /api/users/login - Invalid Credentials!!
+2024-04-09T13:17:36.018Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2024-04-09T13:17:58.116Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2024-04-09T13:18:50.508Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2024-04-09T13:19:59.066Z error: ::1 undefined undefined 400 /api/users/login - Invalid Request Params!!
+2024-04-09T13:21:01.744Z info: ::1 1 B1811--uQUCfGHtiGWptCCfg5GPpbrdAN_Ce6SFfBFw 200 /api/users/login - Log In!!
+2024-04-09T13:21:56.211Z info: ::1 1 nJt7YkSw2Ujdw9t2f12GhyTLIj7jEhuIIguzucnIHLo 200 /api/users/login - Log In!!
+2024-04-09T13:21:59.149Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-04-09T13:22:58.998Z info: ::1 1 U4-rNMrcSMT1ZANHBOOw2ThWu2O9g21BtxF8w5HrPy4 200 /api/users/login - Log In!!
+2024-04-09T13:44:46.172Z info: ::1 1 2DumExfxNKMppLvJQYVXu4R_vC7PgWnCLznK5jJSIyc 200 /api/users/login - Log In!!
+2024-04-09T13:44:47.516Z info: ::1 200 /api/certificate/list - Get Certificates List
+2024-04-09T13:55:22.339Z info: ::1 1 YJc7QOH_kcFeab3TSVxLuvvWULXOXw0IncfJtXRCe_Q 200 /api/users/login - Log In!!
+2024-05-27T07:22:41.579Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
