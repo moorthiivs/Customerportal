@@ -21,6 +21,8 @@ router.post("/list", certificateController.listcertificatesHandler);
 
 router.post("/download", certificateController.certificateDownloader);
 
+router.post("/view-master", certificateController.masterCertificateDownloader);
+
 router.post(
   "/postCertificateData",
   syncCertificateController.postCertificateData

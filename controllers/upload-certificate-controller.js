@@ -3,16 +3,8 @@ const Certificate = require("../models").Certificate;
 const create = async (req, res) => {
 
     try {
-
-        const file = req.file;
-
-        // console.log(req.file.filename);
-        console.log(req.body);
-
-        // return res.json({ msg: "File uploaded successfully" });
-
         const customer_obj = {
-            filename: req.file.filename,
+            filename: req.files.file[0].filename,
 
             srfId: req.body.srfId,
             srfNo: req.body.srfNo,
@@ -26,9 +18,8 @@ const create = async (req, res) => {
             rstatus: 1,
 
             companyId: req.body.companyId,
+            master_certificate_filename: req.files?.masterfile?.[0]?.filename || null
         }
-        // return res.json(customer_obj);
-
         const newCertificate = new Certificate(customer_obj);
         const result = await newCertificate.save();
         return res.json(result);

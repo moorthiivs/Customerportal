@@ -119,7 +119,6 @@ const listcertificatesHandler = async (req, res, next) => {
 };
 
 const certificateDownloader = async (req, res, next) => {
-  
   let isError = false;
   const documentName = req.body.fileName;
   const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
@@ -133,8 +132,25 @@ const certificateDownloader = async (req, res, next) => {
     let message = `${ip} ${userId} ${sessionId} ${code} ${apipath} - ${action}`;
     logger.info(message);
     const docPath = path.join(__dirname, "..", "certificates", documentName);
-    //console.log(docPath);
 
+    res.sendFile(docPath);
+  }
+};
+
+const masterCertificateDownloader = async (req, res, next) => {
+  let isError = false;
+  const documentName = req.body.fileName;
+  const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
+  const userId = req.userId;
+  const sessionId = req.sessionId;
+  let code = 200;
+  const apipath = "/api/mastercertificate/download";
+  let action = "Get Document " + documentName;
+
+  if (isError == false) {
+    let message = `${ip} ${userId} ${sessionId} ${code} ${apipath} - ${action}`;
+    logger.info(message);
+    const docPath = path.join(__dirname, "..", "mastercertificates", documentName);
     res.sendFile(docPath);
   }
 };
@@ -142,3 +158,4 @@ const certificateDownloader = async (req, res, next) => {
 exports.certificateUploadHandler = certificateUploadHandler;
 exports.listcertificatesHandler = listcertificatesHandler;
 exports.certificateDownloader = certificateDownloader;
+exports.masterCertificateDownloader = masterCertificateDownloader

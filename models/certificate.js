@@ -39,7 +39,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: true,
     },
-
+    master_certificate_filename: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     rstatus: {
       type: DataTypes.INTEGER,
       allowNull: false,
