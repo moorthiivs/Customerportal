@@ -5,6 +5,7 @@ import { TableWithBrowserPagination, Column, Button, Spinner, Card, Modal, } fro
 import { AuthContext } from "../../context/auth-context";
 import config from "../../utils/config.json";
 import CustomSearch from "../UI/CustomSearch";
+import { FaDownload } from 'react-icons/fa';
 
 const CertificatesList = (props) => {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -72,9 +73,56 @@ const CertificatesList = (props) => {
     />
   );
 
+  
+  const masterViewCertificate = ({ value }) => (
+    <Button
+      variant="neutral"
+      label="View"
+      onClick={() => masterCertificateViewHandler(value)}
+      disabled={!value}
+    />
+  );
+
+  const masterCertificateViewHandler = (value) => {
+
+    setFileName(value);
+
+    const requestBody = {
+      fileName: value,
+    };
+
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + auth.token,
+      },
+      body: JSON.stringify(requestBody),
+    };
+
+    fetch(config.CustomerPortal.URL + "/api/certificate/view-master", requestOptions)
+      .then((response) => response.blob())
+      .then((blob) => {
+        let base64String;
+
+        let reader = new FileReader();
+        reader.readAsDataURL(blob);
+        reader.onloadend = () => {
+          base64String = reader.result;
+          setPdf(base64String);
+          setPdfString(base64String.substr(base64String.indexOf(",") + 1));
+          setIsLoaded(true);
+          setIsOpen(true);
+        };
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   const DownloadCertificate = ({ value }) => (
     <a className="download__link" download={filename} href={pdf}>
-      Download
+      Download <FaDownload />
     </a>
   );
   return (
@@ -152,6 +200,11 @@ const CertificatesList = (props) => {
               <Column header="Serial Number" field="serialno" />
               <Column header="Id Number" field="idno" />
               <Column
+                header="Master Certificate"
+                field="master_certificate_filename"
+                component={masterViewCertificate}
+              />
+              <Column
                 header="View Certificate"
                 field="filename"
                 component={ViewCertificate}
@@ -173,18 +226,25 @@ const CertificatesList = (props) => {
           onRequestClose={handleOnClose}
           size="large"
           className="certificate__modal"
-        >
-          <Document
-            file={`data:application/pdf;base64,${pdfString}`}
-            onLoadSuccess={onDocumentLoadSuccess}
-          >
-            {pages.map((page) => (
-              <>
-                <p className="pagenumber">{page}</p>
-                <Page size="A4" pageNumber={page}></Page>
-              </>
-            ))}
-          </Document>
+        >{
+            pdf.startsWith('data:image/') ? (
+              <img
+                src={`data:image/png;base64,${pdfString}`}
+                alt="Certificate"
+                style={{ width: '100%', height: 'auto' }}
+              />
+            ) : (
+              <Document
+                file={`data:application/pdf;base64,${pdfString}`}
+                onLoadSuccess={onDocumentLoadSuccess}
+              >
+                {pages.map((page) => (
+                  <>
+                    <p className="pagenumber">{page}</p>
+                    <Page size="A4" pageNumber={page}></Page>
+                  </>
+                ))}
+              </Document>)}
         </Modal>
       ) : null}
     </div>
