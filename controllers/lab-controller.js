@@ -8,7 +8,7 @@ var fs = require('fs');
 
 const addlab = async (req, res, next) => {
 
-  const {
+  let {
     lab_name,
     calibmaster_lab_id,
     address1,
@@ -59,6 +59,8 @@ const addlab = async (req, res, next) => {
     sealLogo
   } = req.body;
 
+  email_smtp_server_port = email_smtp_server_port || null;  
+  
   //Checking lab in Database
   let existingLab;
   try {
