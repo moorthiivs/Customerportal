@@ -32,13 +32,11 @@ const login = async (req, res, next) => {
 
   const { email, password } = req.body;
 
-  console.log(email, password);
-
   //Checking user in Database
   let existingUser;
   try {
     existingUser = await User.findOne({
-      where: { email: email, rstatus: 1 }
+      where: { email: email }
     });
   } catch (err) {
     console.log(err);
@@ -83,6 +81,17 @@ const login = async (req, res, next) => {
     isError = true;
     code = 401;
     action = "Invalid Credentials!!";
+    const error = new Error(action);
+    error.code = code;
+    error.path = path;
+    return errorHandler(error, req, res, next);
+  }
+
+  // If User account disabled return Error Response
+  if (existingUser?.rstatus == 0) {
+    isError = true;
+    code = 401;
+    action = "Your account has been disabled. Please reach your lab!!";
     const error = new Error(action);
     error.code = code;
     error.path = path;
@@ -159,7 +168,6 @@ const adduser = async (req, res, next) => {
     error.path = path;
     return errorHandler(error, req, res, next);
   }
-  console.log(req.body);
 
   const { name, email, password, companyId, labId, calibmaster_client_id } = req.body;
 
@@ -215,7 +223,6 @@ const adduser = async (req, res, next) => {
       calibmaster_client_id
     });
     const result = await newUser.save();
-    console.log(result);
   } catch (err) {
     isError = true;
     code = 500;
@@ -383,7 +390,7 @@ const resetPassword = async (req, res, next) => {
     );
 
     return res.status(200).json({
-      msg: response, message: "Record updated successfully!!!"
+      msg: response, message: "Client User Password updated successfully!!!"
     });
 
   } catch (err) {
@@ -394,8 +401,62 @@ const resetPassword = async (req, res, next) => {
   }
 }
 
+const enable_disableUser = async (req, res, next) => {
+
+  const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
+  let code = 200;
+  const path = "/api/users/enable-disable-user";
+  let action = "enable/disable User by calibmaster_client_id!!";
+  let sessionId;
+  let userId;
+
+  const { calibmaster_client_id, enable_disable } = req.body;
+
+  if (!calibmaster_client_id) {
+    let action = "All fields are required";
+    const error = new Error(action);
+    error.code = 500;
+    error.path = path;
+    return errorHandler(error, req, res, next);
+  }
+
+  try {
+    const findUser = await User.findOne({
+      where: { calibmaster_client_id }
+    });
+
+    // Check if user exist on database
+    if (!findUser) {
+      const error = new Error("User not found!!");
+      error.code = 500;
+      error.path = path;
+      return errorHandler(error, req, res, next);
+    }
+
+    let response = await User.update(
+      { rstatus: enable_disable },
+      { where: { calibmaster_client_id: calibmaster_client_id } }
+    );
+
+    let message = `${ip} ${userId} ${sessionId} ${code} ${path} - ${action}`;
+    logger.info(message);
+
+    return res.status(200).json({
+      msg: response, message: "User Enable/Disable updated successfully!!!"
+    });
+
+  } catch (err) {
+    let action = "Something went wrong, please try again";
+    const error = new Error(action);
+    error.code = 500;
+    error.path = path;
+    return errorHandler(error, req, res, next);
+  }
+};
+
 exports.deleteuser = deleteuser;
 exports.adduser = adduser;
 exports.login = login;
 exports.fetchClient = fetchClient;
 exports.resetPassword = resetPassword;
+exports.enable_disableUser = enable_disableUser;
