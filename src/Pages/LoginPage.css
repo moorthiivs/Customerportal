@@ -12,11 +12,12 @@
 }
 
 .topgap {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .redcolor {
   color: red;
+  text-align: center;
 }
 
 .login-page-header{
