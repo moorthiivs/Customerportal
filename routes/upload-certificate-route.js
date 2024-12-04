@@ -18,7 +18,7 @@ ensureDirectoryExistence(masterCertPath);
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         if (file.fieldname === 'file') {
-            cb(null, certPath); 
+            cb(null, certPath);
         } else if (file.fieldname === 'masterfile') {
             cb(null, masterCertPath);
         } else {
@@ -27,7 +27,7 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
         if (file.fieldname === 'file') {
-            cb(null, Date.now() + '.pdf');
+            cb(null, file.originalname);
         } else if (file.fieldname === 'masterfile') {
             cb(null, file.originalname);
         } else {

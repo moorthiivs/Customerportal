@@ -24,7 +24,7 @@ const newcompanyHandler = async (req, res, next) => {
   //   return errorHandler(error, req, res, next);
   // }
 
-  const { id, companyname, email, address1, address2, address3, labId, calibmaster_customer_id } = req.body;
+  const { calibmaster_customer_id, customer_id } = req.body;
 
   // create customer object for validation and store in database
   let customerObj = {};
@@ -50,9 +50,6 @@ const newcompanyHandler = async (req, res, next) => {
   customerContactObj.contact_phone_2 = req.body.customer_contact.contact_phone_2;
 
   customerObj.lab_id = req.body.labId;
-
-  console.log(req.body.labId);
-  console.log(req.body.calibmaster_customer_id);
 
   //Checking Company in Database
   let existingCompany;
@@ -87,6 +84,7 @@ const newcompanyHandler = async (req, res, next) => {
 
   try {
     const createdCompany = new Company({
+      id: customer_id,
       companyname: customerObj.customer_name,
       email: customerContactObj.contact_email,
       address1: customerObj.address1,
@@ -97,7 +95,6 @@ const newcompanyHandler = async (req, res, next) => {
       rstatus: 1,
     });
     const newcompany = await createdCompany.save();
-    console.log(newcompany);
 
     return res.status(201).json({
       status: "SUCCESS",

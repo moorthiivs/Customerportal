@@ -9,6 +9,7 @@ var fs = require('fs');
 const addlab = async (req, res, next) => {
 
   let {
+    lab_id,
     lab_name,
     calibmaster_lab_id,
     address1,
@@ -116,6 +117,7 @@ const addlab = async (req, res, next) => {
   // *** Creating Lab ***
   try {
     const newLab = new Lab({
+      lab_id,
       lab_name: lab_name,
       calibmaster_lab_id,
       address1,
@@ -165,7 +167,7 @@ const addlab = async (req, res, next) => {
 
     });
     const result = await newLab.save();
-    console.log(result);
+    // console.log(result);
 
     //Retuning 200 response
     return res.status(201).json({

@@ -43,6 +43,9 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: true,
     },
+    srf_item_id: {
+      type: DataTypes.INTEGER,
+    },
     rstatus: {
       type: DataTypes.INTEGER,
       allowNull: false,
