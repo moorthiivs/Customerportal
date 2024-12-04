@@ -17,22 +17,16 @@
   height: 100vh !important;
 }
 
-a:link,
-a:visited {
-  background-color: #27ec3b;
-  color: white;
-  padding: 1px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  cursor: pointer;
+.menu_item:hover {
+  color: rgba(1, 182, 245, 1);
 }
 
-a:hover,
-a:active {
-  text-align: center;
-  background-color: #27ecdb;
+.download_icon svg {
+  transition: transform 1s ease-in-out;
+}
+
+.download_icon:hover svg {
+  transform: rotate(360deg) scale(1.2);
 }
 
 

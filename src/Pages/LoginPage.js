@@ -63,7 +63,8 @@ const LoginPage = (props) => {
               data1.name,
               data1.role,
               data1.companyId,
-              data1.labId
+              data1.labId,
+              data1.lab_logo_filename
             );
             setError();
             setRedirect(true);
