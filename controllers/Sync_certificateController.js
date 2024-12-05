@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const { Certificate } = require('../models');
+const { CALIBMASTER_PORTAL_SERVER } = require("../utils/config");
 
 exports.postCertificateData = async (req, res) => {
   try {
@@ -7,21 +8,32 @@ exports.postCertificateData = async (req, res) => {
     let updated_count = 0;
 
     for (const each_item of srfitems) {
-      const { srfId, srfNo, srf_item_id, filename, certificates_base64, master_certificates_base64, master_certificate_filename } = each_item;
+      const { srfId, srfNo, srf_item_id, filename, master_certificate_filename } = each_item;
 
       // Check if the certificate already exists
       const existssrfitem = await Certificate.findOne({ where: { srfId, srfNo, srf_item_id, filename } });
 
       if (!existssrfitem) {
-        // Write certificate files if base64 data exists
-        if (certificates_base64) {
-          await fs.writeFile(`certificates/${filename}`, certificates_base64, 'base64');
-          delete each_item.certificates_base64;
-        }
+        try {
+          const post_data = {
+            method: 'POST', headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ filename, master_certificate_filename })
+          };
 
-        if (master_certificates_base64) {
-          await fs.writeFile(`mastercertificates/${master_certificate_filename}`, master_certificates_base64, 'base64');
-          delete each_item.master_certificates_base64;
+          const response = await fetch(CALIBMASTER_PORTAL_SERVER + '/api/certificate_sync/get_certificate', post_data);
+          const certificates = await response.json();
+
+          await fs.writeFile(`certificates/${filename}`, certificates.certificate_base64, 'base64');
+
+          if (master_certificate_filename) {
+            await fs.writeFile(`mastercertificates/${master_certificate_filename}`, certificates.master_certificate_base64, 'base64');
+          }
+        }
+        catch (err) {
+          console.log(err)
+          return;
         }
 
         // Update or create certificate in database
