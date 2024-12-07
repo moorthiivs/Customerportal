@@ -113,6 +113,74 @@ const newcompanyHandler = async (req, res, next) => {
   }
 };
 
+const updatecompanyhandler = async (req, res, next) => {
+
+  let code = 200;
+  const path = "/api/company/update";
+  let action = "Updating Company Details!!";
+  let isError = false;
+
+  const { calibmaster_customer_id, customer_id, labId, customer, customer_contact } = req.body;
+
+  // create customer object for validation and store in database
+  let customerObj = {
+    companyname: customer.customer_name,
+    email: customer_contact.contact_email,
+    address1: customer.address1,
+    address2: customer.address2,
+    address3: customer.address3,
+  }
+  //Checking Company in Database
+  let existingCompany;
+  try {
+    existingCompany = await Company.findOne({
+      where: {
+        id: customer_id,
+        labId,
+        calibmaster_customer_id
+      },
+    });
+  } catch (err) {
+    isError = true;
+    code = 500;
+    action = "Internal Server Error!!";
+    const error = new Error(action);
+    error.code = code;
+    error.path = path;
+    return errorHandler(error, req, res, next);
+  }
+
+  //If company not exists return Error Response
+  if (!existingCompany) {
+    isError = true;
+    code = 401;
+    action = "Company Not Exists!!";
+    const error = new Error(action);
+    error.code = code;
+    error.path = path;
+    return errorHandler(error, req, res, next);
+  }
+
+  try {
+    await Company.update(customerObj, { where: { id: customer_id } })
+
+    return res.status(201).json({
+      status: "SUCCESS",
+      code: 201,
+      message: "Company Updated Successfully",
+    });
+  } catch (err) {
+    console.log(err);
+    isError = true;
+    code = 500;
+    action = "Internal Server Error!!" + err;
+    const error = new Error(action);
+    error.code = code;
+    error.path = path;
+    return errorHandler(error, req, res, next);
+  }
+};
+
 const fetchCompany = async (req, res, next) => {
 
   const { calibmaster_customer_id } = req.params
@@ -141,3 +209,4 @@ const fetchCompany = async (req, res, next) => {
 
 exports.newcompanyHandler = newcompanyHandler;
 exports.fetchCompany = fetchCompany;
+exports.updatecompanyhandler = updatecompanyhandler
