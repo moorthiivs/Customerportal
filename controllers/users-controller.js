@@ -34,10 +34,14 @@ const login = async (req, res, next) => {
 
   //Checking user in Database
   let existingUser;
+  let userLabs;
+  
   try {
     existingUser = await User.findOne({
       where: { email: email }
     });
+
+    userLabs = await Lab.findOne({ where: existingUser.labId });
   } catch (err) {
     console.log(err);
     isError = true;
@@ -141,6 +145,7 @@ const login = async (req, res, next) => {
         role: "Client",
         companyId: existingUser.companyId,
         labId: existingUser.labId,
+        lab_logo_filename: userLabs.brand_logo_filename
       },
       message: "Login Success!!",
     });
