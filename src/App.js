@@ -19,14 +19,16 @@ const App = () => {
   const [role, setRole] = useState();
   const [companyId, setCompanyId] = useState();
   const [labId, setLabId] = useState();
+  const [lab_logo_filename, setLab_logo_filename] = useState(null);
 
-  const login = useCallback((uid, token, name, role, companyid, labid, expirationDate) => {
+  const login = useCallback((uid, token, name, role, companyid, labid, lab_logo_filename, expirationDate) => {
     setToken(token);
     setuserId(uid);
     setName(name);
     setRole(role);
     setCompanyId(companyid);
     setLabId(labid);
+    setLab_logo_filename(lab_logo_filename);
 
     const tokenExpirationDate = expirationDate || new Date(new Date().getTime() + 1000 * 60 * 60);
 
@@ -34,7 +36,7 @@ const App = () => {
 
     localStorage.setItem(
       "userData", JSON.stringify({
-        userId: uid, token: token, name: name, role: role, companyId: companyid, labId: labid,
+        userId: uid, token: token, name: name, role: role, companyId: companyid, labId: labid, lab_logo_filename: lab_logo_filename,
         expiration: tokenExpirationDate.toISOString(),
       })
     );
@@ -48,6 +50,7 @@ const App = () => {
     setRole(null);
     setCompanyId(null);
     setLabId(null);
+    setLab_logo_filename(null);
     localStorage.removeItem("userData");
   }, []);
 
@@ -67,7 +70,7 @@ const App = () => {
       login(
         storedData.userId, storedData.token,
         storedData.name, storedData.role, storedData.companyId,
-        storedData.labId, new Date(storedData.expiration)
+        storedData.labId, storedData.lab_logo_filename, new Date(storedData.expiration)
       );
     }
   }, [login]);
@@ -102,6 +105,7 @@ const App = () => {
             role: role,
             companyId: companyId,
             labId: labId,
+            lab_logo_filename: lab_logo_filename,
             login: login,
             logout: logout,
           }}

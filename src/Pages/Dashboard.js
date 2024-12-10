@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -107,7 +107,7 @@ export default function Dashboard() {
   const [open, setOpen] = useState(false);
   const [certificateslist, setCertificatesList] = useState();
 
-  let frontEndVersion=packageconfig?.version || '0.0.0';
+  let frontEndVersion = packageconfig?.version || '0.0.0';
   const [backEndVersion, setBackEndVersion] = useState(null);
 
   const [isLoaded, setIsLoaded] = useState();
@@ -148,7 +148,7 @@ export default function Dashboard() {
       });
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     const requestOptions = {
       method: "GET",
       headers: {
@@ -163,7 +163,7 @@ export default function Dashboard() {
       .catch((err) => {
         console.log(err);
       })
-  },[])
+  }, [])
 
   return (
     <div className={classes.root}>
@@ -212,7 +212,7 @@ export default function Dashboard() {
         <div className="inline-flex" style={{ backgroundImage: `url(${bg})` }}>
           <div className="user-info">
             <Avatar
-              src="images/CalibMaster_Logo2.png"
+              src={auth.lab_logo_filename ? `${config.CustomerPortal.URL}/images/${auth.lab_logo_filename}` : "images/CalibMaster_Logo2.png"}
               assistiveText="iviewsense"
               title={`iviewsense\nversion ${frontEndVersion}/${backEndVersion}`}
               size="large"
