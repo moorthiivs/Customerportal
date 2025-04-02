@@ -166,7 +166,7 @@ const addlab = async (req, res, next) => {
       effective_end_date: Date.now() + 1000 * 60 * 60 * 24 * 364 * 3000,
 
     });
-    const result = await newLab.save();
+    const result = await newLab.save(); 
     // console.log(result);
 
     //Retuning 200 response
