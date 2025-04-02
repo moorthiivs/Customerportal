@@ -19,7 +19,7 @@ const App = () => {
   const [role, setRole] = useState();
   const [companyId, setCompanyId] = useState();
   const [labId, setLabId] = useState();
-  const [lab_logo_filename, setLab_logo_filename] = useState(null);  
+  const [lab_logo_filename, setLab_logo_filename] = useState(null);   
 
   const login = useCallback((uid, token, name, role, companyid, labid, lab_logo_filename, expirationDate) => {
     setToken(token);
