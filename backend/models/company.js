@@ -1,0 +1,46 @@
+"use strict";
+module.exports = (sequelize, DataTypes) => {
+  const Company = sequelize.define("Company", {
+    // Model attributes are defined here
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      allowNull: false,
+      primaryKey: true,
+    },
+    companyname: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    address1: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    address2: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    address3: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    rstatus: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    labId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    calibmaster_customer_id: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+  });
+
+  return Company;
+};
