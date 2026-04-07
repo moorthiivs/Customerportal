@@ -39,7 +39,7 @@ jobs:
 
       - name: Sync Frontend Build to Backend
         run: |
-          cp -r frontend/dist/* backend/public/
+          cp -r frontend/build/* backend/public/
 
       - name: Configure Backend
         run: |
