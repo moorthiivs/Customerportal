@@ -11,17 +11,10 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import {
-  Avatar,
-  Modal,
-  FileSelector,
-  Button,
-  Input,
-} from "react-rainbow-components";
+import { Avatar } from "react-rainbow-components";
 
 import "./Dashboard.css";
 import SidebarItems from "../components/SidebarItems";
-import Breadcrumb from "../components/Breadcrumb";
 import bg from "../images/sea-bg.jpg";
 import BodyContent from "../components/BodyContent";
 import { AuthContext } from "../context/auth-context";
@@ -30,13 +23,6 @@ import config from "../utils/config.json";
 import packageconfig from '../../package.json'
 
 const drawerWidth = 300;
-const containerStyles = {
-  maxWidth: 300,
-};
-
-const inputStyles = {
-  width: 300,
-};
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -110,8 +96,6 @@ export default function Dashboard() {
   let frontEndVersion = packageconfig?.version || '0.0.0';
   const [backEndVersion, setBackEndVersion] = useState(null);
 
-  const [isLoaded, setIsLoaded] = useState();
-
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -141,7 +125,6 @@ export default function Dashboard() {
       .then(async (response) => {
         const data = await response.json();
         setCertificatesList(data.data);
-        setIsLoaded(true);
       })
       .catch((err) => {
         console.log(err);

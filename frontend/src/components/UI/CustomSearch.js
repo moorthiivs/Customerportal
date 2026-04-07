@@ -12,14 +12,14 @@ import {
   filterbyserialno,
   filterbysrfNo,
 } from "../../utils/filters";
-const CustomSearch = (props) => {
+const CustomSearch = ({ options, onfilter, filterby, label }) => {
   const [state, setState] = useState({ options: null });
   useEffect(() => {
-    setState({ options: props.options });
-  }, [props.options]);
+    setState({ options });
+  }, [options]);
   useEffect(() => {
-    props.onfilter(state.options);
-  }, [state]);
+    onfilter(state.options);
+  }, [state.options, onfilter]);
 
   function filter(query, options, filterby) {
     if (query) {
@@ -42,7 +42,7 @@ const CustomSearch = (props) => {
   function search(value) {
     if (state.options && state.value && value.length > state.value.length) {
       setState({
-        options: filter(value, state.options, props.filterby),
+        options: filter(value, state.options, filterby),
         value,
       });
     } else if (value) {
@@ -50,7 +50,7 @@ const CustomSearch = (props) => {
         value,
       });
       setState({
-        options: filter(value, props.options, props.filterby),
+        options: filter(value, options, filterby),
         value,
       });
     } else {
@@ -63,7 +63,7 @@ const CustomSearch = (props) => {
   return (
     <div className="custom__search__container">
       <CustomInput
-        label={props.label}
+        label={label}
         type="text"
         onchange={(v) => search(v)}
         disabled={false}

@@ -1,6 +1,6 @@
 import "./CertificatesList.css";
-import { Document, Page, pdfjs } from "react-pdf";
-import { useContext, useEffect, useState } from "react";
+import { Document, Page } from "react-pdf";
+import { useContext, useState } from "react";
 import { TableWithBrowserPagination, Column, Button, Spinner, Card, Modal, MenuItem, ButtonMenu } from "react-rainbow-components";
 import { AuthContext } from "../../context/auth-context";
 import config from "../../utils/config.json";
@@ -15,7 +15,6 @@ const CertificatesList = (props) => {
   const [pdfString, setPdfString] = useState("");
   const [pages, setPages] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [filename, setFileName] = useState();
   const [pdf, setPdf] = useState();
 
   const onDocumentLoadSuccess = ({ numPages }) => {
@@ -30,8 +29,6 @@ const CertificatesList = (props) => {
   };
 
   const certificateViewHandler = (value, is_View) => {
-
-    setFileName(value);
 
     const requestBody = {
       fileName: value,
@@ -83,8 +80,6 @@ const CertificatesList = (props) => {
   );
 
   const masterCertificateViewHandler = (value) => {
-
-    setFileName(value);
 
     const requestBody = {
       fileName: value,

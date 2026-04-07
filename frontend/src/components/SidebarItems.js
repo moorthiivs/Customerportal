@@ -1,7 +1,6 @@
 import "./SidebarItems.css";
-import Menu from "../utils/menu.json";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -10,13 +9,10 @@ import ListItemText from "@material-ui/core/ListItemText";
 
 import {
   PowerSettingsNew,
-  CloudUploadOutlined,
-  PersonAddOutlined,
   FileCopyRounded,
 } from "@material-ui/icons";
-import { AuthContext } from "../context/auth-context";
 import { useContext } from "react";
-import Documents from "./SideBarComponents/Documents";
+import { AuthContext } from "../context/auth-context";
 
 const useStyles = makeStyles((theme) => ({
   root: {

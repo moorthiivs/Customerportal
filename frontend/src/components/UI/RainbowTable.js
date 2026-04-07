@@ -3,9 +3,7 @@ import React from 'react';
 import { Table, Column, Card} from 'react-rainbow-components';
 
 
-const DataTable=[
-    {name:"max",status:"online",company:"ABC",email:"max@gmail.com"},
-    {name:"john",status:"online",company:"sff",email:"john@gmail.com"},];
+
 class RainbowTable extends React.Component {
     
     constructor(props) {

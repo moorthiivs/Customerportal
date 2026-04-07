@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Menu from "../../utils/menu.json";
 import "./Documents.css";
 import config from "../../utils/config.json";
 import Collapse from "@material-ui/core/Collapse";
@@ -17,9 +16,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { AuthContext } from "../../context/auth-context";
 import { useContext } from "react";
 import {
-  PowerSettingsNew,
-  CloudUploadOutlined,
-  PersonAddOutlined,
   PersonOutlineOutlined,
   PictureAsPdfOutlined,
 } from "@material-ui/icons";
@@ -34,14 +30,13 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(4),
   },
 }));
-const Documents = (props) => {
+const Documents = ({ currentItemHandler }) => {
   //console.log(props.menu);
   const [menu, setMenu] = useState();
   const [open, setOpen] = useState([false, false]);
   const [copen, setcOpen] = useState();
   const [current, setCurrent] = useState("Home");
   const classes = useStyles();
-  const [isLoaded, setIsLoaded] = useState();
   const auth = useContext(AuthContext);
   let icons = {
     PeopleAltOutlined: PeopleAltOutlined,
@@ -53,8 +48,8 @@ const Documents = (props) => {
   };
 
   useEffect(() => {
-    props.currentItemHandler(current);
-  }, [current]);
+    currentItemHandler(current);
+  }, [current, currentItemHandler]);
 
   useEffect(() => {
     let opens = [...open];
@@ -66,7 +61,7 @@ const Documents = (props) => {
       opens[index] = openitem;
       setOpen(opens);
     }
-  }, [copen]);
+  }, [copen, open]);
 
   useEffect(() => {
     const requestOptions = {
