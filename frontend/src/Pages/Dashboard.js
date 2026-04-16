@@ -19,7 +19,7 @@ import bg from "../images/sea-bg.jpg";
 import BodyContent from "../components/BodyContent";
 import { AuthContext } from "../context/auth-context";
 import { useContext } from "react";
-import config from "../utils/config.json";
+import config from "../utils/config";
 import packageconfig from '../../package.json'
 
 const drawerWidth = 300;

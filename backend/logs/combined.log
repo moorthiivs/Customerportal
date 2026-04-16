@@ -54,3 +54,40 @@
 2024-04-09T13:44:47.516Z info: ::1 200 /api/certificate/list - Get Certificates List
 2024-04-09T13:55:22.339Z info: ::1 1 YJc7QOH_kcFeab3TSVxLuvvWULXOXw0IncfJtXRCe_Q 200 /api/users/login - Log In!!
 2024-05-27T07:22:41.579Z info: ::1 undefined undefined 200 /api/users/adduser - Adding Client user!!
+2026-04-16T11:17:44.424Z info: app is running
+2026-04-16T11:25:25.980Z info: app is running
+2026-04-16T11:34:47.192Z info: ::1 2 ck1eNXtj4Zj6awvb3ZEsy-Nz9pXWmC6O0IZJLvDan44 200 /api/users/login - Log In!!
+2026-04-16T11:34:47.253Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T11:35:00.574Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!SequelizeDatabaseError: column "filename" does not exist
+2026-04-16T11:35:14.884Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!SequelizeDatabaseError: column "filename" does not exist
+2026-04-16T11:35:39.890Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!SequelizeDatabaseError: column "filename" does not exist
+2026-04-16T11:35:42.404Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T11:41:10.666Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!SequelizeDatabaseError: column "filename" does not exist
+2026-04-16T11:41:27.601Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T11:42:01.192Z info: ::1 2 mwmvJlkbThRo99Z2TTy87CJ9AK-0Wo3i77BudChv8dc 200 /api/users/login - Log In!!
+2026-04-16T11:42:01.220Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T11:45:20.037Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T11:45:27.625Z info: ::1 2 rV4_AGjLYj5LgsEX_YZctvkye-pM5EpEXeH77M9RP5A 200 /api/users/login - Log In!!
+2026-04-16T11:45:27.655Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T11:52:11.857Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:21:42.953Z info: ::1 2 C-wL2gQ8jHdMq-RDsM1Fyv-xpFyGHVETY8Rl2Eta1Ow 200 /api/users/login - Log In!!
+2026-04-16T12:21:43.016Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:21:46.568Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!SequelizeDatabaseError: column "filename" does not exist
+2026-04-16T12:22:22.788Z error: ::1 undefined undefined 500 /api/certificate/list - Internal Server Error!!SequelizeDatabaseError: column "filename" does not exist
+2026-04-16T12:30:38.357Z info: app is running
+2026-04-16T12:31:04.755Z info: ::1 1 550uJ0oW2QoCC8hE6sDxGKeRa13s5hYwjbSMWQapcCY 200 /api/users/login - Log In!!
+2026-04-16T12:31:04.832Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:31:11.583Z info: ::1 200 /api/certificate/list - Get Certificates List
+2026-04-16T12:34:43.374Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:36:20.389Z info: app is running
+2026-04-16T12:36:55.646Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:37:07.094Z info: ::1 1 I7vgZDV0xdKaUU0zuHtFgAXkAoZh8Yr3cmqaoyCpOxs 200 /api/users/login - Log In!!
+2026-04-16T12:37:07.141Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:37:09.109Z info: ::1 200 /api/certificate/list - Get Certificates List
+2026-04-16T12:37:17.282Z info: ::1 1 VT13DTr6rEono-UNR2jcabAd5MHTOvYv6mpxokPj6pw 200 /api/users/login - Log In!!
+2026-04-16T12:37:17.303Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:37:48.159Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:37:58.172Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:38:08.175Z info: ::1 1 k6K5XULKQk_HvX_tE59e54YbdlJ68iRQ0j-UyAajYYw 200 /api/users/login - Log In!!
+2026-04-16T12:38:08.236Z info: ::1 200 /api/heartbeat/check - Get Heartbeat
+2026-04-16T12:38:10.728Z info: ::1 200 /api/certificate/list - Get Certificates List

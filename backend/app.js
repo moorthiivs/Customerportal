@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const usersRoutes = require("./routes/users-routes");
@@ -26,6 +27,16 @@ app.use("/api/certificate", certificateRoutes);
 app.use("/api/calibration", calibrationRoutes);
 app.use("/api/upload", uploadCertificateRoutes);
 app.use("/api/test", testRoutes);
+
+app.get('/env-config.js', (req, res) => {
+  res.set('Content-Type', 'application/javascript');
+  res.send(`
+      window.ENV_CONFIG = {
+          CALIBMASTER_URL: "${process.env.CALIBMASTER_URL || ''}",
+          CUSTOMERPORTAL_URL: "${process.env.CUSTOMERPORTAL_URL || ''}"
+      };
+  `);
+});
 
 app.get("/*", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");

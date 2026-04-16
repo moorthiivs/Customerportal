@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Documents.css";
-import config from "../../utils/config.json";
+import config from "../../utils/config";
 import Collapse from "@material-ui/core/Collapse";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import DraftsIcon from "@material-ui/icons/Drafts";

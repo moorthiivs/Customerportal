@@ -3,7 +3,7 @@ import { Document, Page } from "react-pdf";
 import { useContext, useState } from "react";
 import { TableWithBrowserPagination, Column, Button, Spinner, Card, Modal, MenuItem, ButtonMenu } from "react-rainbow-components";
 import { AuthContext } from "../../context/auth-context";
-import config from "../../utils/config.json";
+import config from "../../utils/config";
 import CustomSearch from "../UI/CustomSearch";
 import { faDownload, faEllipsisV, faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

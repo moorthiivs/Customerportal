@@ -7,7 +7,7 @@ import "./LoginPage.css";
 import background from "../images/background.jpg";
 import LoginCard from "../components/LoginCard";
 import { AuthContext } from "../context/auth-context";
-import config from "../utils/config.json";
+import config from "../utils/config";
 
 const avatarLarge = { width: 110, height: 110 };
 const inputStyles = {
