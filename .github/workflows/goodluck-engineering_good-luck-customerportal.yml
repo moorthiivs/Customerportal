@@ -44,6 +44,9 @@ jobs:
           cd backend
           npm install
 
+      - name: Remove log files before packaging
+        run: rm -rf backend/logs/
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
