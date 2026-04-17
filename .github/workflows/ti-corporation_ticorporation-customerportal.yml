@@ -9,6 +9,10 @@ on:
       - TI-Corporation
   workflow_dispatch:
 
+concurrency:
+  group: azure-deployment
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,24 +20,38 @@ jobs:
       contents: read #This is required for actions/checkout
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
           node-version: '24.x'
 
-      - name: npm install, build, and test
+      - name: Build Frontend
         run: |
+          cd frontend
           npm install
-          npm run build --if-present
-          npm run test --if-present
+          npm run build
+
+      - name: Sync Frontend Build to Backend
+        run: |
+          cp -r frontend/build/* backend/public/
+
+
+      - name: Install backend dependencies (for App Service)
+        run: |
+          cd backend
+          npm install
+
+      - name: Remove log files before packaging
+        run: rm -rf backend/logs/
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: backend/
 
   deploy:
     runs-on: ubuntu-latest
