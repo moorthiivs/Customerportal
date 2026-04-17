@@ -9,6 +9,10 @@ on:
       - GoodLuck-Engineering
   workflow_dispatch:
 
+concurrency:
+  group: azure-deployment
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,9 +31,7 @@ jobs:
       - name: Configure Frontend
         run: |
           cd frontend
-          echo '{
-            "CustomerPortal": { "URL": "${{ secrets.CUSTOMER_PORTAL_URL }}" }
-          }' > src/utils/config.json
+          echo '{\n            "CustomerPortal": { "URL": "${{ secrets.CUSTOMER_PORTAL_URL }}" }\n          }' > src/utils/config.json
 
       - name: Build Frontend
         run: |
@@ -45,24 +47,21 @@ jobs:
         run: |
           cd backend
           # Update config/config.json with secrets
-          node -e "
-            const fs = require('fs');
-            const conf = JSON.parse(fs.readFileSync('config/config.json', 'utf8'));
-            
-            const host = '${{ secrets.DB_HOST }}';
-            const database = '${{ secrets.DB_NAME }}';
-            const username = '${{ secrets.DB_USER }}';
-            const password = '${{ secrets.DB_PASS }}';
-            
-            ['development', 'test', 'production'].forEach(env => {
-              if (!conf[env]) conf[env] = {};
-              conf[env].host = host;
-              conf[env].database = database;
-              conf[env].username = username;
-              conf[env].password = password;
-            });
-            
-            fs.writeFileSync('config/config.json', JSON.stringify(conf, null, 2));
+          node -e "\
+            const fs = require('fs');\
+            const conf = JSON.parse(fs.readFileSync('config/config.json', 'utf8'));\
+            \n            const host = '${{ secrets.DB_HOST }}';\
+            const database = '${{ secrets.DB_NAME }}';\
+            const username = '${{ secrets.DB_USER }}';\
+            const password = '${{ secrets.DB_PASS }}';\
+            \n            ['development', 'test', 'production'].forEach(env => {\
+              if (!conf[env]) conf[env] = {};\
+              conf[env].host = host;\
+              conf[env].database = database;\
+              conf[env].username = username;\
+              conf[env].password = password;\
+            });\
+            \n            fs.writeFileSync('config/config.json', JSON.stringify(conf, null, 2));\
           "
 
       - name: Install backend dependencies (for App Service)
